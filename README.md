@@ -1,5 +1,5 @@
 # ZXPInstaller
-An simple cross platform ZXP installer.
+A simple cross platform ZXP installer.
 
 # Basic idea
 Since Adobe has decided to remove Adobe Extension Manager from future distribution there is no friendly way for users to easily install Adobe Extensions. This project uses Adobe Extension Manager Command line utility to create an installer which will install any ZXP file. There will be a website to which developers could send users to download the installer.
