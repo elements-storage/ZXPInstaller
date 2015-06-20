@@ -1,7 +1,7 @@
 {
   "name": "zxpinstaller",
   "version": "1.0.0",
-  "description": "An cross platform installer for every Adobe developer to easily and freely releaseribute Adobe Extensions",
+  "description": "An simple cross platform ZXP installer.",
   "main": "index.js",
   "dependencies": {
     "electron-builder": "^2.0.0"
