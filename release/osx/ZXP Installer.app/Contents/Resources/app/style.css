@@ -1,0 +1,7 @@
+#holder {
+  width: 300px;
+  height: 100px;
+  border-radius: 25px;
+  border: 2px red dashed;
+  padding: 10px;
+}

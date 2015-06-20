@@ -1,0 +1,43 @@
+{
+  "name": "zxpinstaller",
+  "version": "1.0.0",
+  "description": "An cross platform installer for every Adobe developer to easily and freely releaseribute Adobe Extensions",
+  "main": "index.js",
+  "dependencies": {
+    "electron-builder": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CreativeDo/ZXPInstaller.git"
+  },
+  "author": "CreativeDo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CreativeDo/ZXPInstaller/issues"
+  },
+  "homepage": "https://github.com/CreativeDo/ZXPInstaller#readme",
+  "scripts": {
+    "dev": "electron ./app",
+
+    "clean": "rm -rf ./release",
+    "clean:osx": "rm -rf ./release/osx",
+    "clean:win": "rm -rf ./release/win",
+
+    "build": "npm run clean && npm run build:osx && npm run build:win",
+    "build:osx": "npm run clean:osx && electron-packager ./app \"ZXP Installer\" --out=release/osx --platform=darwin --arch=x64 --version=0.25.3",
+    "build:win": "npm run electron-packager ./app \"ZXP Installer\" --out=release/win --platform=win32 --arch=ia32 --version=0.25.3",
+
+    "pack": "npm run pack:osx && npm run pack:win",
+    "pack:osx": "npm run build:osx && electron-builder \"release/osx/ZXP Installer.app\" --platform=osx --out=\"release/osx\" --config=packager.json",
+    "pack:win": "npm run build:win && electron-builder \"release/win/ZXP Installer-win32\" --platform=win --out=\"release/win\" --config=packager.json"
+  },
+  "dependencies": {
+    "electron-packager": "^4.0.2",
+    "electron-prebuilt": "^0.25.2",
+    "electron-builder": "^1.0.0"
+  }
+}

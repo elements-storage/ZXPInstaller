@@ -1,0 +1,12 @@
+{
+  "osx" : {
+    "title": "ZXPInstaller",
+    "contents": [
+      { "x": 438, "y": 344, "type": "link", "path": "/Applications" },
+      { "x": 192, "y": 344, "type": "file" }
+    ]
+  },
+  "win" : {
+    "title" : "ZXPInstaller"
+  }
+}
