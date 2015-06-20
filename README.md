@@ -8,7 +8,7 @@ Since Adobe has decided to remove Adobe Extension Manager from future distributi
 The idea is to keep it basic. One window with a drag and drop zone and a status message. Dropping a ZXP file will install it. Nothing more nothing less.
 
 # How this works
-The installer uses Electron (http://electron.atom.io) to create an cross platform HTML/node.js app. The app will spawn a child process for the Adobe Extension Manager Command line utility to install the ZXP distributed with the app.
+The installer uses Electron (http://electron.atom.io) to create an cross platform HTML/node.js app. The app will spawn a child process for the Adobe Extension Manager Command line utility to install the ZXP.
 
 # Help needed
 Help is needed. If you working on a Windows platform it would be nice if you could take the Windows side of the development. If you are a designer it would be nice if you could offer a general and clean design and a nice icon for the app. Help in the HTML/CSS side would also appreciated.
