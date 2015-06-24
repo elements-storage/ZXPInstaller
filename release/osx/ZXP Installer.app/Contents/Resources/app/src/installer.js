@@ -5,6 +5,7 @@ var path = require('path');
 global.installer = function() {
 
   var RELEASE = 'zxp/release.zxp'
+  var CMD_PREFIX = (platform() == "darwin") ? "--" : "/"
 
   var target_path = function() {
     var pathToBin
@@ -20,6 +21,7 @@ global.installer = function() {
     return pathToBin;
   }
 
+
   return {
     install: function(zxpPath) {
 
@@ -27,10 +29,15 @@ global.installer = function() {
       console.log("startig to install ZXP from path " + zxpPath);
 
       return promise = new Promise(function(resolve, reject) {
-        var spawn = install_process.spawn(path.join(__dirname, target_path()), ["--install", zxpPath]);
+        var spawn = install_process.spawn(path.join(__dirname, target_path()), [CMD_PREFIX+"install", zxpPath]);
 
         // AEM only prints out if something went wrong. Adobe - go figure
         spawn.stdout.on('data',function(data){
+            console.log("stdout " + data.toString());
+            reject(data.toString());
+        });
+
+        spawn.stderr.on('data',function(data){
             console.log("stdout " + data.toString());
             reject(data.toString());
         });

@@ -10,16 +10,16 @@ var mainWindow = null;
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function() {
-  if (process.platform != 'darwin') {
+  // if (process.platform != 'darwin') {
     app.quit();
-  }
+  // }
 });
 
 // This method will be called when Electron has done everything
 // initialization and ready for creating browser windows.
 app.on('ready', function() {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600});
+  mainWindow = new BrowserWindow({width: 600, height: 450});
 
   // and load the index.html of the app.
   mainWindow.loadUrl('file://' + __dirname + '/index.html');

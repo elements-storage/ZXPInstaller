@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>Thu Feb 26 2015 08:29:20</string>
+	<key>BuildMachineOSBuild</key>
+	<string>13E28</string>
+	<key>BuildVersion</key>
+	<string>1.584361</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>adobe_caps</string>
+	<key>CFBundleGetInfoString</key>
+	<string>adobe_caps 9.0.0.4, "© 2005-2013 Adobe Systems Incorporated and its licensors. All rights reserved."</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.adobe.adobe_caps</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>adobe_caps</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>adobe_caps 9.0.0.4</string>
+	<key>CFBundleSignature</key>
+	<string>ADBE</string>
+	<key>CFBundleVersion</key>
+	<string>9.0.0.4</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>5A3005</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>13A595</string>
+	<key>DTSDKName</key>
+	<string>macosx10.9</string>
+	<key>DTXcode</key>
+	<string>0502</string>
+	<key>DTXcodeBuild</key>
+	<string>5A3005</string>
+</dict>
+</plist>

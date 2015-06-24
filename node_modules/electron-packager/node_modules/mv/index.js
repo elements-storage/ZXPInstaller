@@ -89,7 +89,7 @@ function moveDirAcrossDevice(source, dest, clobber, limit, cb) {
     limit: limit,
   };
   if (clobber) {
-    rimraf(dest, function(err) {
+    rimraf(dest, { disableGlob: true }, function(err) {
       if (err) return cb(err);
       startNcp();
     });
@@ -99,7 +99,7 @@ function moveDirAcrossDevice(source, dest, clobber, limit, cb) {
   function startNcp() {
     ncp(source, dest, options, function(errList) {
       if (errList) return cb(errList[0]);
-      rimraf(source, cb);
+      rimraf(source, { disableGlob: true }, cb);
     });
   }
 }

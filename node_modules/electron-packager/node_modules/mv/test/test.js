@@ -57,7 +57,7 @@ describe("mv", function() {
         // move it back
         mv("test/does/not/exist/a-file-dest", "test/a-file", function(err) {
           assert.ifError(err);
-          rimraf("test/does", done);
+          rimraf("test/does", { disableGlob: true }, done);
         });
       });
     });
@@ -74,6 +74,27 @@ describe("mv", function() {
         mv("test/a-file-dest", "test/a-file", function(err) {
           restoreFsRename();
           done(err);
+        });
+      });
+    });
+  });
+
+  it("should work across devices, even with special characters", function (done) {
+    overrideFsRename();
+    mv("test/a-file", "test/a-*", function (err) {
+      assert.ifError(err);
+      fs.readFile("test/a-*", 'utf8', function (err, contents) {
+        assert.ifError(err);
+        assert.strictEqual(contents, "sonic the hedgehog\n");
+        // move it back
+        mv("test/a-*", "test/a-file", function(err) {
+          assert.ifError(err);
+          fs.readFile("test/a-file", 'utf8', function (err, contents) {
+            assert.ifError(err);
+            assert.strictEqual(contents, "sonic the hedgehog\n");
+            restoreFsRename();
+            done(err);
+          });
         });
       });
     });
@@ -102,6 +123,27 @@ describe("mv", function() {
         mv("test/a-folder-dest", "test/a-folder", function(err) {
           restoreFsRename();
           done(err);
+        });
+      });
+    });
+  });
+
+  it("should move folders across devices, even with special characters", function (done) {
+    overrideFsRename();
+    mv("test/a-folder", "test/a-*", function (err) {
+      assert.ifError(err);
+      fs.readFile("test/a-*/another-folder/file3", 'utf8', function (err, contents) {
+        assert.ifError(err);
+        assert.strictEqual(contents, "knuckles\n");
+        // move it back
+        mv("test/a-*", "test/a-folder", function(err) {
+          assert.ifError(err);
+          fs.readFile("test/a-folder/another-folder/file3", 'utf8', function (err, contents) {
+            assert.ifError(err);
+            assert.strictEqual(contents, "knuckles\n");
+            restoreFsRename();
+            done(err);
+          });
         });
       });
     });
