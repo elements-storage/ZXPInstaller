@@ -31,7 +31,6 @@ global.installer = function() {
       return promise = new Promise(function(resolve, reject) {
         var spawn = install_process.spawn(path.join(__dirname, target_path()), [CMD_PREFIX+"install", zxpPath]);
 
-        // AEM only prints out if something went wrong. Adobe - go figure
         spawn.stdout.on('data',function(data){
             console.log("stdout " + data.toString());
             reject(data.toString());
