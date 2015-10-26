@@ -16,7 +16,6 @@ global.View = function() {
     promise.then(function(result) {
       installationSuccess();
     }, function(err) {
-      console.log(err); // Error
       installationFailed(err);
     });
 
