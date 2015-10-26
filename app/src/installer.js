@@ -37,8 +37,13 @@ global.installer = function() {
         });
 
         spawn.stderr.on('data',function(data){
-            console.log("stderr " + data.toString());
-            reject(data.toString());
+            console.log('stderr: ' + data.toString());
+            var logbits = /(\d{4}-\d{2}-\d{2}) (\d{2}:\d{2}:\d{2}) : ([A-Z]+)\s+(.*)/.exec(data.toString());
+            var date    = logbits[1];
+            var time    = logbits[2];
+            var level   = logbits[3];
+            var message = logbits[4];
+            if (level === 'ERROR') {reject(message);}
         });
 
         // code 0 => success
