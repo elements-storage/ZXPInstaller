@@ -17,7 +17,7 @@ global.View = function() {
       installationSuccess();
     }, function(err) {
       console.log(err); // Error
-      installationFaild(err);
+      installationFailed(err);
     });
 
   }
@@ -27,7 +27,7 @@ global.View = function() {
     view.appendChild(spinner.el);
   }
 
-  var installationFaild = function(error) {
+  var installationFailed = function(error) {
     view.removeChild(spinner.el);
     $(view).find('.status').html(error);
   }

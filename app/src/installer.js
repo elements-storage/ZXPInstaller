@@ -26,7 +26,7 @@ global.installer = function() {
     install: function(zxpPath) {
 
       console.log("using target path of " + target_path());
-      console.log("startig to install ZXP from path " + zxpPath);
+      console.log("starting to install ZXP from path " + zxpPath);
 
       return promise = new Promise(function(resolve, reject) {
         var spawn = install_process.spawn(path.join(__dirname, target_path()), [CMD_PREFIX+"install", zxpPath]);
