@@ -38,7 +38,7 @@ global.installer = function() {
         });
 
         spawn.stderr.on('data',function(data){
-            console.log("stdout " + data.toString());
+            console.log("stderr " + data.toString());
             reject(data.toString());
         });
 
