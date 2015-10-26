@@ -28,8 +28,13 @@ global.View = function() {
   }
 
   var installationFailed = function(error) {
+    var errors = {
+      402: 'Installation failed because the extension\'s signature is invalid.'
+      456: 'Please close all Adobe applications and try again.'
+    };
+
     view.removeChild(spinner.el);
-    $(view).find('.status').html(error);
+    $(view).find('.status').html(errors[error] || 'Error: ' + error);
   }
 
   var installationSuccess = function() {
