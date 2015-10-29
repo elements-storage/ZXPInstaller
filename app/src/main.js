@@ -34,7 +34,7 @@ global.View = function() {
 
   var installationSuccess = function() {
     view.removeChild(spinner.el);
-    $(view).find('.status').html("Extension installed successfully. Please restart Photoshop to start using your Extension.");
+    $(view).find('.status').html("Extension installed successfully. Please restart application to start using your extension.");
   }
 
   // PUBLIC
