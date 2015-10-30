@@ -16,5 +16,5 @@ Help is needed. If you working on a Windows platform it would be nice if you cou
 # How to start helping
 Get up and running with Electron, help, and submit a pull request.
 
-#Current status
+# Current status
 Currently there is a basic framework which is tested to work on OS X and installs ZXP successfully. There is also a first release to play with. Now working on the Windows version.
