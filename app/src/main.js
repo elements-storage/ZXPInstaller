@@ -14,6 +14,10 @@ global.View = function() {
 
   _this = this;
 
+  var updateStatus = function(msg) {
+    $(view).find('.status').html(msg);
+  }
+
   var install = function() {
     var promise = installer.install(_this.zxpPath);
     startInstalling();
