@@ -6,6 +6,10 @@ global.View = function() {
   var installer = global.installer();
   var spinner = new Spinner().spin()
 
+  var msgDragToInstall = 'Drag a ZXP file here to install it.';
+  var msgDropToInstall = 'Drop your file here to install it.';
+  var msgInstalling = 'Installing your extension.';
+  var msgInstalled = 'Your extension has been installed. Please restart Photoshop.';
   this.zxpPath;
 
   _this = this;
