@@ -1,8 +1,8 @@
 global.$ = $;
 
 global.View = function() {
+  var body = document.body;
   var view = document.getElementById('main-view');
-  var holder = document.getElementById('holder');
   var installer = global.installer();
   var spinner = new Spinner().spin()
 
@@ -15,7 +15,7 @@ global.View = function() {
   _this = this;
 
   var updateStatus = function(msg) {
-    $(view).find('.status').html(msg);
+    $(body).find('.status').html(msg);
   }
 
   var install = function() {
@@ -61,23 +61,18 @@ global.View = function() {
 
   this.init = function() {
 
-    document.ondragover = document.ondrop = function(e) {
-      e.preventDefault();
+    document.ondragover = function () {
+      $(body).addClass('hover');
       return false;
     };
 
-    holder.ondragover = function () {
-      $(holder).addClass('hover');
+    document.ondragleave = document.ondragend = function () {
+      $(body).removeClass('hover');
       return false;
     };
 
-    holder.ondragleave = holder.ondragend = function () {
-      $(holder).removeClass('hover');
-      return false;
-    };
-
-    holder.ondrop = function (e) {
-      $(holder).removeClass('hover');
+    document.ondrop = function (e) {
+      $(body).removeClass('hover');
       e.preventDefault();
       var file = e.dataTransfer.files[0];
       console.log('detected:',file.path);

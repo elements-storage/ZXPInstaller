@@ -9,6 +9,10 @@ body {
   transition: background-color 1s;
 }
 
+.hover {
+  background-color: #751e29;
+}
+
 .main-view {
   background-color: #471319;
   top: 0;
