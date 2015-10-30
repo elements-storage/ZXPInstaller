@@ -30,7 +30,7 @@ global.View = function() {
   }
 
   var startInstalling = function(){
-    $(view).find('.status').empty();
+    updateStatus('');
     view.appendChild(spinner.el);
   }
 
@@ -49,12 +49,12 @@ global.View = function() {
     };
 
     view.removeChild(spinner.el);
-    $(view).find('.status').html(errors[error] || 'Error: ' + error);
+    updateStatus(errors[error] || 'Error: ' + error);
   }
 
   var installationSuccess = function() {
     view.removeChild(spinner.el);
-    $(view).find('.status').html("Extension installed successfully. Please restart your Adobe applications to start using your extension.");
+    updateStatus(msgInstalled);
   }
 
   // PUBLIC
