@@ -30,7 +30,7 @@ global.View = function() {
   }
 
   var startInstalling = function(){
-    updateStatus('');
+    updateStatus(msgInstalling);
     view.appendChild(spinner.el);
   }
 
