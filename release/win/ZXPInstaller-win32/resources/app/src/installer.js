@@ -26,20 +26,25 @@ global.installer = function() {
     install: function(zxpPath) {
 
       console.log("using target path of " + target_path());
-      console.log("startig to install ZXP from path " + zxpPath);
+      console.log("starting to install ZXP from path " + zxpPath);
 
       return promise = new Promise(function(resolve, reject) {
         var spawn = install_process.spawn(path.join(__dirname, target_path()), [CMD_PREFIX+"install", zxpPath]);
 
-        // AEM only prints out if something went wrong. Adobe - go figure
         spawn.stdout.on('data',function(data){
-            console.log("stdout " + data.toString());
-            reject(data.toString());
+            console.log('stderr: ' + data.toString());
+            var logbits = /-(\d+)/.exec(data.toString());
+            reject(logbits && logbits[1] ? parseInt(logbits[1]) : null);
         });
 
         spawn.stderr.on('data',function(data){
-            console.log("stdout " + data.toString());
-            reject(data.toString());
+            console.log('stderr: ' + data.toString());
+            var logbits = /(\d{4}-\d{2}-\d{2}) (\d{2}:\d{2}:\d{2}) : ([A-Z]+)\s+(.*)/.exec(data.toString());
+            var date    = logbits[1];
+            var time    = logbits[2];
+            var level   = logbits[3];
+            var message = logbits[4];
+            if (level === 'ERROR') {reject(message);}
         });
 
         // code 0 => success

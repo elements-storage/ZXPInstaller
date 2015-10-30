@@ -1,6 +1,6 @@
 {
   "name": "zxpinstaller",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An simple cross platform ZXP installer.",
   "main": "index.js",
   "dependencies": {

@@ -16,8 +16,7 @@ global.View = function() {
     promise.then(function(result) {
       installationSuccess();
     }, function(err) {
-      console.log(err); // Error
-      installationFaild(err);
+      installationFailed(err);
     });
 
   }
@@ -27,14 +26,27 @@ global.View = function() {
     view.appendChild(spinner.el);
   }
 
-  var installationFaild = function(error) {
+  var installationFailed = function(error) {
+    var errors = {
+      175: 'Installation failed because you do not have administrator access.',
+      201: 'Installation failed because the extension invalid.',
+      411: 'Installation failed because the extension is not compatible with the installed applications.',
+      407: 'Installation failed because this extension requires another extension.',
+      408: 'Installation failed because this extension requires another extension.',
+      412: 'Installation failed because an extension of the same name exists.',
+      418: 'Installation failed because a newer version of the extension is installed.',
+      456: 'Installation failed because Adobe applications are running',
+      458: 'Installation failed because none of the required applications are installed',
+      459: 'Installation failed because the extension is not compatible with the installed applications.'
+    };
+
     view.removeChild(spinner.el);
-    $(view).find('.status').html(error);
+    $(view).find('.status').html(errors[error] || 'Error: ' + error);
   }
 
   var installationSuccess = function() {
     view.removeChild(spinner.el);
-    $(view).find('.status').html("Extension installed successfully. Please restart Photoshop to start using your Extension.");
+    $(view).find('.status').html("Extension installed successfully. Please restart your Adobe applications to start using your extension.");
   }
 
   // PUBLIC
