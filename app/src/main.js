@@ -86,6 +86,7 @@ global.View = function() {
       return false;
     };
 
+    updateStatus(msgDragToInstall);
   }
 
 }
