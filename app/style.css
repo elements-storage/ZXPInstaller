@@ -19,18 +19,17 @@ body {
   border: 1px solid #751f29;
   position: absolute;
   margin: 100px;
-  padding: 20px;
+  padding: 25px;
   transition: border-color .5s;
 }
 
 .holder {
   height: 100%;
-  display: block;
 }
 
 .icon {
   width: 74px;
-  margin: 20px auto;
+  margin: 0 auto 15px;
 }
 
 .status {
