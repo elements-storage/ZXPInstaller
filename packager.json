@@ -3,10 +3,10 @@
     "background": "assets/osx/installer.png",
     "title": "ZXP Installer",
     "icon": "assets/osx/icon.icns",
-    "icon-size": 80,
+    "icon-size": 128,
     "contents": [
-      { "x": 270, "y": 160, "type": "link", "path": "/Applications" },
-      { "x": 70, "y": 160, "type": "file" }
+      { "x": 587, "y": 249, "type": "link", "path": "/Applications" },
+      { "x": 208, "y": 249, "type": "file" }
     ]
   },
   "win" : {
