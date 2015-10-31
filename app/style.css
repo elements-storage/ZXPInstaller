@@ -9,10 +9,6 @@ body {
   transition: background-color 1s;
 }
 
-.hover {
-  background-color: #751e29;
-}
-
 .main-view {
   background-color: #471319;
   top: 0;
@@ -24,47 +20,80 @@ body {
   position: absolute;
   margin: 100px;
   padding: 20px;
+  transition: border-color .5s;
 }
 
 .holder {
   height: 100%;
-  display: table;
+  display: block;
 }
 
 .icon {
   width: 74px;
-  display: table-cell;
-  vertical-align: middle;
+  margin: 20px auto;
 }
 
 .status {
   font-weight: bold;
   color: #fff;
-  height: 85px;
-  display: table-cell;
-  vertical-align: middle;
-  padding-left: 10px;
+  text-align: center;
+}
+
+@keyframes spinner {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes arrow {
+  0%, 100% { transform: translate(0px, 0px); }
+  50% { transform: translate(0px, 7px); }
 }
 
 .white,
 .red,
 .green {
-  transition: opacity .2s;
+  transform: translate(0px, 14px);
 }
 
+.white,
+.red,
+.red .arrow,
+.green,
+.green .one,
+.green .two,
+.green .three {
+  transition: opacity .5s;
+}
+
+.red,
+.red .arrow,
 .green .one,
 .green .two,
 .green .three,
-.green .backplate,
-.red {
+.green .backplate {
   opacity: 0;
 }
 
-@keyframes one {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  30% { opacity: 1; }
-  100% { opacity: 0; }
+.red .arrow {
+  animation-name: arrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.is-dragging .red,
+.is-dragging .arrow {
+  opacity: 1;
+}
+
+.is-dragging .white {
+  opacity: 0;
+}
+
+.is-dragging .main-view {
+  border-color: #9D2A37;
 }
 
 .was-successful .white,
@@ -90,7 +119,7 @@ body {
 .is-showing-spinner .green .one,
 .is-showing-spinner .green .two,
 .is-showing-spinner .green .three {
-  animation-name: one;
+  animation-name: spinner;
   animation-duration: .9s;
   animation-iteration-count: infinite;
 }

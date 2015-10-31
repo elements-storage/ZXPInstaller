@@ -70,17 +70,19 @@ global.View = function() {
   this.init = function() {
 
     document.ondragover = function () {
-      $(body).addClass('hover');
+      $(body).addClass('is-dragging').removeClass('was-successful');
+      updateStatus(msgDropToInstall);
       return false;
     };
 
     document.ondragleave = document.ondragend = function () {
-      $(body).removeClass('hover');
+      $(body).removeClass('is-dragging');
+      updateStatus(msgDragToInstall);
       return false;
     };
 
     document.ondrop = function (e) {
-      $(body).removeClass('hover');
+      $(body).removeClass('is-dragging');
       e.preventDefault();
       var file = e.dataTransfer.files[0];
       console.log('detected:',file.path);
