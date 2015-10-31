@@ -67,6 +67,18 @@ body {
   100% { opacity: 0; }
 }
 
+.was-successful .white,
+.was-successful .red {
+  opacity: 0;
+}
+
+.was-successful .green .one,
+.was-successful .green .two,
+.was-successful .green .three {
+  opacity: 1;
+}
+
+
 .is-showing-spinner .white {
   opacity: 0;
 }

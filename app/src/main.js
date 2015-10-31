@@ -4,7 +4,6 @@ global.View = function() {
   var body = document.body;
   var view = document.getElementById('main-view');
   var installer = global.installer();
-  var spinner = new Spinner().spin()
 
   var msgDragToInstall = 'Drag a ZXP file here to install it.';
   var msgDropToInstall = 'Drop your file here to install it.';
@@ -17,6 +16,14 @@ global.View = function() {
   var updateStatus = function(msg) {
     $(body).find('.status').html(msg);
   }
+
+  var toggleSpinner = function(state) {
+    $(body).toggleClass('is-showing-spinner', state)
+  };
+
+  var toggleSuccess = function(state) {
+    $(body).toggleClass('was-successful', state)
+  };
 
   var install = function() {
     var promise = installer.install(_this.zxpPath);
@@ -31,7 +38,7 @@ global.View = function() {
 
   var startInstalling = function(){
     updateStatus(msgInstalling);
-    view.appendChild(spinner.el);
+    toggleSpinner(true);
   }
 
   var installationFailed = function(error) {
@@ -48,12 +55,13 @@ global.View = function() {
       459: 'Installation failed because the extension is not compatible with the installed applications.'
     };
 
-    view.removeChild(spinner.el);
+    toggleSpinner(false);
     updateStatus(errors[error] || 'Error: ' + error);
   }
 
   var installationSuccess = function() {
-    view.removeChild(spinner.el);
+    toggleSpinner(false);
+    toggleSuccess(true);
     updateStatus(msgInstalled);
   }
 
