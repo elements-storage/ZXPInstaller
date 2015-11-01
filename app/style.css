@@ -50,6 +50,19 @@ body {
   50% { transform: translate(0px, 7px); }
 }
 
+@-webkit-keyframes spinner {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-webkit-keyframes arrow {
+  0%, 100% { transform: translate(0px, 0px); }
+  50% { transform: translate(0px, 7px); }
+}
+
+
 .white,
 .red,
 .green {
@@ -80,6 +93,10 @@ body {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  -webkit-animation-name: arrow;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
 }
 
 .is-dragging .red,
@@ -121,12 +138,17 @@ body {
   animation-name: spinner;
   animation-duration: .9s;
   animation-iteration-count: infinite;
+  -webkit-animation-name: spinner;
+  -webkit-animation-duration: .9s;
+  -webkit-animation-iteration-count: infinite;
 }
 
 .is-showing-spinner .green .two {
   animation-delay: .3s;
+  -webkit-animation-delay: .3s;
 }
 
 .is-showing-spinner .green .three {
   animation-delay: .6s;
+  -webkit-animation-delay: .6s;
 }
