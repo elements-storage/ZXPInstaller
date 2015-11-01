@@ -16,8 +16,8 @@ global.Messages = function() {
   this.ui = {
     dragToInstall: 'Drag a ZXP file here to install it.',
     dropToInstall: 'Drop your file here to install it.',
-    installing: 'Installing your extension.',
-    installed: 'Your extension has been installed. Please restart Photoshop.'
+    installing: 'Installing your extension…',
+    installed: 'Your extension has been installed. Please restart your Adobe application.'
   };
 
   return this;
