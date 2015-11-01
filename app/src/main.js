@@ -19,7 +19,7 @@ global.View = function() {
   };
 
   var toggleSuccess = function(state) {
-    $(body).toggleClass('was-successful', state)
+    $(body).toggleClass('was-successful', state).removeClass('is-showing-spinner');
   };
 
   var install = function() {
