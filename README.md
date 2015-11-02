@@ -1,20 +1,40 @@
 # ZXPInstaller
-A simple cross platform ZXP installer.
 
-# Basic idea
-Since Adobe has decided to remove Adobe Extension Manager from future distribution there is no friendly way for users to easily install Adobe Extensions. This project uses Adobe Extension Manager Command line utility to create an installer which will install any ZXP file. There will be a website to which developers could send users to download the installer.
+ZXPInstaller is a simple cross platform (OS X and Windows) installer for third party Adobe extensions (`.zxp` files). It serves as a replacement for the Extension Manager which no longer is not supported after CC 2014. It provides a drag-and-drop GUI for installation, and [a website](http://zxpinstaller.com/) to which extension developers can point users to download the installer.
 
-# What will it do?
-The idea is to keep it basic. One window with a drag and drop zone and a status message. Dropping a ZXP file will install it. Nothing more nothing less.
+# How it works
 
-# How this works
-The installer uses Electron (http://electron.atom.io) to create an cross platform HTML/node.js app. The app will spawn a child process for the Adobe Extension Manager Command line utility to install the ZXP.
+ZXPInstaller uses Electron (http://electron.atom.io) to create a cross platform HTML/node.js app. The app spawns a child process for the Adobe Extension Manager command line utility to install the ZXP.
+
+# Setup (OS X)
+
+1. Install [Node.js](https://nodejs.org).
+
+1. Install the dependencies and start the app.
+
+  ```
+  npm install
+  npm run dev
+  ```
+
+# Compiling (OS X)
+
+1. Install [Homebrew](http://brew.sh/).
+
+1. Install `wine` and `makensis` for `electron-builder` (needed to build the Windows installer).
+
+  ```
+  brew install wine makensis
+  ```
+
+1. Run the build script
+
+  ```
+  npm run pack
+  ```
+
+1. You will find the compiled binaries in the `release` directory.
 
 # Help needed
-Help is needed. If you working on a Windows platform it would be nice if you could take the Windows side of the development. If you are a designer it would be nice if you could offer a general and clean design and a nice icon for the app. Help in the HTML/CSS side would also appreciated.
 
-# How to start helping
-Get up and running with Electron, help, and submit a pull request.
-
-# Current status
-Currently there is a basic framework which is tested to work on OS X and installs ZXP successfully. There is also a first release to play with. Now working on the Windows version.
+Windows is supported, however a maintainer is still needed for the Windows portion of the code.
