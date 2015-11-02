@@ -1,5 +1,7 @@
 # How to publish a release
 
+*This document is a reminder for the project contributors.*
+
 1. Be sure you’ve merged your changes into `master`.
 
 1. If you haven’t already, the version number in `[package.json](../package.json)` and commit your change.
