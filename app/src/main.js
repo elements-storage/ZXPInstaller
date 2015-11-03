@@ -4,6 +4,9 @@ global.View = function() {
   var body = document.body;
   var view = document.getElementById('main-view');
   var installer = global.installer();
+  var remote = require('remote');
+  var dialog = remote.require('dialog');
+
   var msg = new global.Messages()
 
   this.zxpPath;
@@ -72,6 +75,15 @@ global.View = function() {
       var file = e.dataTransfer.files[0];
       console.log('detected:',file.path);
       _this.zxpPath = file.path
+      install();
+      return false;
+    };
+
+    document.onclick = function (e) {
+      var path = dialog.showOpenDialog({properties: ['openFile']});
+      if (!path) return false;
+      console.log('detected:', path);
+      _this.zxpPath = path
       install();
       return false;
     };
