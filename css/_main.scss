@@ -17,6 +17,7 @@ body {
 .hero {
   height: 120vw;
   max-height: 100vh;
+  min-height: 500px;
   position: relative;
 
   > .container {
