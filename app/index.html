@@ -3,17 +3,89 @@
     <head>
         <title>Adobe ZXP Installer</title>
         <script type="text/javascript" src="vendor/jquery-1.7.2.js"></script>
-        <script type="text/javascript" src="vendor/spin.min.js"></script>
+        <script type="text/javascript" src="src/messages.js"></script>
         <script type="text/javascript" src="src/installer.js"></script>
         <script type="text/javascript" src="src/main.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-      <div id="main-view">
-        <div id="holder">
-          Drag and drop ZXP file to install
+      <div id="main-view" class="main-view">
+        <div id="holder" class="holder">
+          <div class="icon">
+
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74px" height="100px">
+            <g class="white">
+              <polygon class="backplate" fill="#B8B8B8" points="74,21.414 74,21.414 74,21.414 74,21.414 37,0 0,21.414 0,21.414 0,64.243 37,85.658 74,64.243 74,21.414"/>
+              <g class="three">
+                <path fill="#808080" d="M0,64.243l23.334-13.505L0,21.414V64.243z"/>
+                <path fill="#727373" d="M37,85.658l-13.666-34.92L0,64.243L37,85.658z"/>
+                <path fill="#808080" d="M37,42.829l-13.666,7.909L37,85.658V42.829z"/>
+                <path fill="#8E8E8E" d="M0,21.414l23.334,29.324L37,42.829L0,21.414z"/>
+              </g>
+              <g class="two">
+                <path fill="#A6A6A6" d="M74,64.243L50.666,50.738L74,21.414V64.243z"/>
+                <path fill="#A6A6A6" d="M37,42.829l13.666,7.909L37,85.658V42.829z"/>
+                <path fill="#939393" d="M74,21.414L50.666,50.738L37,42.829L74,21.414z"/>
+                <path fill="#B8B8B8" d="M37,85.658l13.666-34.92L74,64.243L37,85.658z"/>
+              </g>
+              <g class="one">
+                <path fill="#BBBBBB" d="M37,0v27.01l37-5.596L37,0z"/>
+                <path fill="#EAEAEA" d="M37,42.829V27.01L0,21.414L37,42.829z"/>
+                <path fill="#D3D3D3" d="M74,21.414L37,27.01v15.818L74,21.414z"/>
+                <path fill="#D3D3D3" d="M0,21.414l37,5.596V0L0,21.414z"/>
+              </g>
+            </g>
+            <g class="red">
+              <polygon class="backplate" fill="#C23344" points="74,21.414 74,21.414 74,21.414 74,21.414 37,0 0,21.414 0,21.414 0,64.243 37,85.658 74,64.243 74,21.414"/>
+              <g class="three">
+                <path fill="#80222D" d="M0,64.243l23.334-13.505L0,21.414V64.243z"/>
+                <path fill="#721E28" d="M37,85.658l-13.666-34.92L0,64.243L37,85.658z"/>
+                <path fill="#80222D" d="M37,42.829l-13.666,7.909L37,85.658V42.829z"/>
+                <path fill="#8F2632" d="M0,21.414l23.334,29.324L37,42.829L0,21.414z"/>
+              </g>
+              <g class="two">
+                <path fill="#9D2837" d="M74,64.243L50.666,50.738L74,21.414V64.243z"/>
+                <path fill="#9D2837" d="M37,42.829l13.666,7.909L37,85.658V42.829z"/>
+                <path fill="#8A2431" d="M74,21.414L50.666,50.738L37,42.829L74,21.414z"/>
+                <path fill="#AF2E3C" d="M37,85.658l13.666-34.92L74,64.243L37,85.658z"/>
+              </g>
+              <g class="one">
+                <path fill="#AC2B3B" d="M37,0v27.01l37-5.596L37,0z"/>
+                <path fill="#D6384A" d="M37,42.829V27.01L0,21.414L37,42.829z"/>
+                <path fill="#C23344" d="M74,21.414L37,27.01v15.818L74,21.414z"/>
+                <path fill="#C23344" d="M0,21.414l37,5.596V0L0,21.414z"/>
+              </g>
+              <polygon class="arrow" fill="#FFFFFF" points="41.7,-0.5 41.7,-13.1 32.3,-13.1 32.3,-0.5 23.3,-0.5 37,13.1 50.7,-0.5"/>
+            </g>
+            <g class="green">
+              <polygon class="backplate" fill="#4BBFA5" points="74,21.414 74,21.414 74,21.414 74,21.414 37,0 0,21.414 0,21.414 0,64.243 37,85.658 74,64.243 74,21.414"/>
+              <g class="three">
+                <polygon fill="#19806C" points="0,21.414 0,64.243 37,85.658 37,42.829"/>
+                <path fill="#177462" d="M0,64.243l23.334-13.505L0,21.414V64.243z"/>
+                <path fill="#166657" d="M37,85.658l-13.666-34.92L0,64.243L37,85.658z"/>
+                <path fill="#177462" d="M37,42.829l-13.666,7.909L37,85.658V42.829z"/>
+                <path fill="#19806C" d="M0,21.414l23.334,29.324L37,42.829L0,21.414z"/>
+              </g>
+              <g class="two">
+                <polygon fill="#22B196" points="37,42.829 37,85.658 74,64.243 74,21.414"/>
+                <path fill="#1EA087" d="M74,64.243L50.666,50.738L74,21.414V64.243z"/>
+                <path fill="#1EA087" d="M37,42.829l13.666,7.909L37,85.658V42.829z"/>
+                <path fill="#1E8E78" d="M74,21.414L50.666,50.738L37,42.829L74,21.414z"/>
+                <path fill="#22B196" d="M37,85.658l13.666-34.92L74,64.243L37,85.658z"/>
+              </g>
+              <g class="one">
+                <polygon fill="#4BBFA5" points="37,0 0,21.414 37,42.829 74,21.414"/>
+                <path fill="#25B799" d="M37,0v27.01l37-5.596L37,0z"/>
+                <path fill="#64C4B0" d="M37,42.829V27.01L0,21.414L37,42.829z"/>
+                <path fill="#4BBFA5" d="M74,21.414L37,27.01v15.818L74,21.414z"/>
+                <path fill="#4BBFA5" d="M0,21.414l37,5.596V0L0,21.414z"/>
+              </g>
+            </g>
+            </svg>
+
+          </div>
+          <div class="status"></div>
         </div>
-        <div class="status"></div>
       </div>
     </body>
 </html>

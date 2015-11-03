@@ -32,7 +32,7 @@ global.installer = function() {
         var spawn = install_process.spawn(path.join(__dirname, target_path()), [CMD_PREFIX+"install", zxpPath]);
 
         spawn.stdout.on('data',function(data){
-            console.log('stderr: ' + data.toString());
+            console.log('stdout: ' + data.toString());
             var logbits = /-(\d+)/.exec(data.toString());
             reject(logbits && logbits[1] ? parseInt(logbits[1]) : null);
         });

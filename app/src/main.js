@@ -1,14 +1,26 @@
 global.$ = $;
 
 global.View = function() {
+  var body = document.body;
   var view = document.getElementById('main-view');
-  var holder = document.getElementById('holder');
   var installer = global.installer();
-  var spinner = new Spinner().spin()
+  var msg = new global.Messages()
 
   this.zxpPath;
 
   _this = this;
+
+  var updateStatus = function(message) {
+    $(body).find('.status').html(message);
+  }
+
+  var toggleSpinner = function(state) {
+    $(body).toggleClass('is-showing-spinner', state)
+  };
+
+  var toggleSuccess = function(state) {
+    $(body).toggleClass('was-successful', state).removeClass('is-showing-spinner');
+  };
 
   var install = function() {
     var promise = installer.install(_this.zxpPath);
@@ -22,54 +34,40 @@ global.View = function() {
   }
 
   var startInstalling = function(){
-    $(view).find('.status').empty();
-    view.appendChild(spinner.el);
+    updateStatus(msg.ui['installing']);
+    toggleSpinner(true);
   }
 
   var installationFailed = function(error) {
-    var errors = {
-      175: 'Installation failed because you do not have administrator access.',
-      201: 'Installation failed because the extension invalid.',
-      411: 'Installation failed because the extension is not compatible with the installed applications.',
-      407: 'Installation failed because this extension requires another extension.',
-      408: 'Installation failed because this extension requires another extension.',
-      412: 'Installation failed because an extension of the same name exists.',
-      418: 'Installation failed because a newer version of the extension is installed.',
-      456: 'Installation failed because Adobe applications are running',
-      458: 'Installation failed because none of the required applications are installed',
-      459: 'Installation failed because the extension is not compatible with the installed applications.'
-    };
 
-    view.removeChild(spinner.el);
-    $(view).find('.status').html(errors[error] || 'Error: ' + error);
+    toggleSpinner(false);
+    updateStatus(msg.errors[error] || 'Error: ' + error);
   }
 
   var installationSuccess = function() {
-    view.removeChild(spinner.el);
-    $(view).find('.status').html("Extension installed successfully. Please restart your Adobe applications to start using your extension.");
+    toggleSpinner(false);
+    toggleSuccess(true);
+    updateStatus(msg.ui['installed']);
   }
 
   // PUBLIC
 
   this.init = function() {
 
-    document.ondragover = document.ondrop = function(e) {
-      e.preventDefault();
+    document.ondragover = function () {
+      $(body).addClass('is-dragging').removeClass('was-successful');
+      updateStatus(msg.ui['dropToInstall']);
       return false;
     };
 
-    holder.ondragover = function () {
-      $(holder).addClass('hover');
+    document.ondragleave = document.ondragend = function () {
+      $(body).removeClass('is-dragging');
+      updateStatus(msg.ui['dragToInstall']);
       return false;
     };
 
-    holder.ondragleave = holder.ondragend = function () {
-      $(holder).removeClass('hover');
-      return false;
-    };
-
-    holder.ondrop = function (e) {
-      $(holder).removeClass('hover');
+    document.ondrop = function (e) {
+      $(body).removeClass('is-dragging');
       e.preventDefault();
       var file = e.dataTransfer.files[0];
       console.log('detected:',file.path);
@@ -78,6 +76,7 @@ global.View = function() {
       return false;
     };
 
+    updateStatus(msg.ui['dragToInstall']);
   }
 
 }
