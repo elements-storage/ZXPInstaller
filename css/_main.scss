@@ -5,12 +5,12 @@ html {
 }
 
 body {
-  position: relative;
   background-color: $maroon-dark;
   color: $white;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.8em;
   padding-bottom: $footer-height;
+  position: relative;
   text-align: center;
 }
 
@@ -209,12 +209,12 @@ body {
     font-weight: 200;
   }
 
-  p + h3 {
-    margin-top: 1em;
-  }
-
   p {
     margin-top: 1rem;
+
+    + h3 {
+      margin-top: 1em;
+    }
   }
 }
 
