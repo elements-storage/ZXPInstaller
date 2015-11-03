@@ -1,6 +1,6 @@
 # ZXPInstaller.com
 
-[ZXPInstaller.com](http://zxpinstaller.com) is a stripped down [Jekyll site](http://jekyllrb.com/).
+[ZXPInstaller.com](http://zxpinstaller.com) is a stripped down [Jekyll](http://jekyllrb.com/) site.
 
 ## Setup (OS X)
 
