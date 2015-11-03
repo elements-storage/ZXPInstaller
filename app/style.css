@@ -99,6 +99,10 @@ body {
   -webkit-animation-timing-function: ease-in-out;
 }
 
+.has-error .red {
+  opacity: 1;
+}
+
 .is-dragging .red,
 .is-dragging .arrow {
   opacity: 1;

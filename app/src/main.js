@@ -38,6 +38,7 @@ global.View = function() {
       installationSuccess();
     }, function(err) {
       installationFailed(err);
+      $(body).addClass('has-error')
     });
 
   }
