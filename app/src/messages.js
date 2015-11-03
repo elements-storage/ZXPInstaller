@@ -1,7 +1,7 @@
 global.Messages = function() {
 
   this.errors = {
-    175: 'You must run ZXP Installer in administrator mode to install extensions.',
+    175: 'You must run ZXPInstaller in administrator mode to install extensions.',
     201: 'Installation failed because the extension invalid.',
     411: 'Installation failed because the extension is not compatible with the installed applications.',
     407: 'Installation failed because this extension requires another extension.',

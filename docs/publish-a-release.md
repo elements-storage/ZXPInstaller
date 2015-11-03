@@ -16,7 +16,7 @@
 
 1. Run `npm run pack`. This will build the binaries to the `release` directory.
 
-1. [Draft a new release](https://github.com/CreativeDo/ZXPInstaller/releases/new). Choose your tag in the *Tag version* dropdown. Title the release with the version number. Add the changelog to the release notes. Upload the `ZXP Installer.dmg` and `ZXPInstaller Setup.exe` files to the release.
+1. [Draft a new release](https://github.com/CreativeDo/ZXPInstaller/releases/new). Choose your tag in the *Tag version* dropdown. Title the release with the version number. Add the changelog to the release notes. Upload the `ZXPInstaller.dmg` and `ZXPInstaller Setup.exe` files to the release.
 
 1. Click the *Publish release* button.
 

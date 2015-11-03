@@ -14,10 +14,10 @@
     "clean:osx": "rm -rf ./release/osx",
     "clean:win": "rm -rf ./release/win",
     "build": "npm run clean && npm run build:osx && npm run build:win",
-    "build:osx": "npm run clean:osx && electron-packager ./app \"ZXP Installer\" --out=release/osx --platform=darwin --arch=x64 --version=0.25.3 --icon=assets/osx/icon.icns",
+    "build:osx": "npm run clean:osx && electron-packager ./app \"ZXPInstaller\" --out=release/osx --platform=darwin --arch=x64 --version=0.25.3 --icon=assets/osx/icon.icns",
     "build:win": "npm run clean:win && electron-packager ./app \"ZXPInstaller\" --out=release/win --platform=win32 --arch=ia32 --version=0.25.3 --icon=assets/win/icon.ico",
     "pack": "npm run pack:osx && npm run pack:win",
-    "pack:osx": "npm run build:osx && electron-builder \"release/osx/ZXP Installer.app\" --platform=macos --out=\"release/osx\" --config=packager.json",
+    "pack:osx": "npm run build:osx && electron-builder \"release/osx/ZXPInstaller.app\" --platform=macos --out=\"release/osx\" --config=packager.json",
     "pack:win": "npm run build:win && electron-builder \"release/win/ZXPInstaller-win32\" --platform=win --out=\"release/win\" --config=packager.json"
   },
   "repository": {

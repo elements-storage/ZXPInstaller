@@ -1,7 +1,7 @@
 {
   "macos" : {
     "background": "assets/osx/installer.png",
-    "title": "ZXP Installer",
+    "title": "ZXPInstaller",
     "icon": "assets/osx/icon.icns",
     "icon-size": 128,
     "contents": [
