@@ -1,0 +1,27 @@
+# Meta
+title: ZXPInstaller
+description: ZXPInstaller is a user-friendly installer for Adobe extensions. It replaces the Extension Manager which Adobe no longer supports as of CC 2015.
+keywords: adobe photoshop indesign illustrator extension installer
+
+# Current release of ZXPInstaller. When updating, be sure there is a GitHub
+# release that matches this version number, and that it includes binaries called
+# `ZXPInstaller.dmg`, and `ZXPInstaller.Setup.exe`. If it does not, the
+# download links will break.
+current_release: 1.3.0
+
+# Jekyll options
+markdown: kramdown
+highlighter: pygments
+sass:
+  sass_dir: css
+  style: compressed
+exclude:
+  - script
+  - Gemfile
+  - script
+  - CNAME
+
+# Url helpers
+baseurl: ''
+url: http://zxpinstaller.com
+repo: https://github.com/CreativeDo/ZXPInstaller

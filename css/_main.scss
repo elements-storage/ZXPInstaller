@@ -1,0 +1,267 @@
+html {
+  font-size: 62.5%;
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  background-color: $maroon-dark;
+  color: $white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.8em;
+  padding-bottom: $footer-height;
+  position: relative;
+  text-align: center;
+}
+
+.hero {
+  height: 120vw;
+  max-height: 100vh;
+  min-height: 500px;
+  position: relative;
+
+  > .container {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.vertical-half {
+  height: 50%;
+  position: relative;
+}
+
+.header {
+  bottom: 5rem;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.icon {
+  background-image: url('../img/icon.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 0;
+  left: 0;
+  margin: 5vw;
+  opacity: .8;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.scroll-down {
+  background-color: $maroon-light;
+  border-radius: 6vw;
+  bottom: 0;
+  height: 3vw;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -1vw);
+  transition: background-color .2s;
+  width: 3vw;
+
+  &:before {
+    border-left: .8vw solid transparent;
+    border-right: .8vw solid transparent;
+    border-top: .8vw solid $maroon-dark;
+    content: '';
+    height: 0;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, 1.3vw);
+    width: 0;
+  }
+
+  &:after {
+    border-left: .8vw solid transparent;
+    border-right: .8vw solid transparent;
+    border-top: .8vw solid $maroon-light;
+    content: '';
+    height: 0;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, 1vw);
+    transition: border-top-color .2s;
+    width: 0;
+  }
+
+  &:hover {
+    background-color: lighten($maroon-light, 5);
+
+    &:after {
+      border-top-color: lighten($maroon-light, 5);
+    }
+  }
+}
+
+.title {
+  font-size: 10rem;
+  font-weight: 200;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  text-shadow: 0 0 10rem $black;
+}
+
+.sub-head {
+  font-size: 2.6rem;
+  font-weight: 400;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  text-shadow: 0 0 10rem $black;
+}
+
+.button {
+  background-color: $green-light;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 $green-dark;
+  color: $white;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: .05rem;
+  padding: 10px 40px;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  transition: background-color .2s, box-shadow .2s, top .2s;
+
+  &:hover {
+    background-color: darken($green-light, 3);
+    color: $white;
+    text-decoration: none;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: 0 1px 0 $green-dark;
+    color: $white;
+    text-decoration: none;
+    top: 1px;
+  }
+
+  + .button {
+    margin-left: 2rem;
+  }
+}
+
+.osx .windows,
+.windows .osx {
+  display: none;
+}
+
+.osx .osx,
+.windows .windows {
+  display: inline-block;
+}
+
+.more {
+  font-size: 20px;
+  margin-top: 1rem;
+
+  a {
+    padding: 1.5rem 1rem;
+    text-shadow: 0 0 10rem $black;
+  }
+
+  .os-option {
+    display: none;
+  }
+
+  .osx & .windows,
+  .windows & .osx {
+    display: inline-block;
+  }
+
+  .osx & .osx,
+  .windows & .windows {
+    display: none;
+  }
+}
+
+.button-holder {
+  left: 0;
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+}
+
+.breakdown {
+  background-color: $maroon-light;
+  font-size: 20px;
+  margin-top: 4rem;
+  padding-bottom: 6rem;
+  padding-top: 4rem;
+
+  h3,
+  p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  h3 {
+    font-size: 48px;
+    font-weight: 200;
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+}
+
+.footer {
+  bottom: 0;
+  font-size: 18px;
+  height: $footer-height;
+  line-height: $footer-height;
+  position: absolute;
+  width: 100%;
+}
+
+a {
+  color: $green-light;
+  display: inline-block;
+  transition: color .2s;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+
+p {
+  margin-bottom: 0;
+
+  + p {
+    margin-top: 1.8rem;
+  }
+}
+
+@media(max-width: 992px){
+  html {
+    font-size: 50%;
+  }
+
+  .scroll-down {
+    display: none;
+  }
+}
+
+@media(max-width: 768px){
+  html {
+    font-size: 40%;
+  }
+
+  .breakdown {
+    .col-sm-6 + .col-sm-6  {
+      margin-top: 4rem;
+    }
+  }
+}
