@@ -13,16 +13,22 @@ global.View = function() {
 
   _this = this;
 
+  var resetClasses = function() {
+    $(body).removeClass('is-showing-spinner was-successful is-dragging has-error')
+  }
+
   var updateStatus = function(message) {
     $(body).find('.status').html(message);
   }
 
   var toggleSpinner = function(state) {
+    resetClasses();
     $(body).toggleClass('is-showing-spinner', state)
   };
 
   var toggleSuccess = function(state) {
-    $(body).toggleClass('was-successful', state).removeClass('is-showing-spinner');
+    resetClasses();
+    $(body).toggleClass('was-successful', state);
   };
 
   var install = function() {
@@ -58,19 +64,20 @@ global.View = function() {
   this.init = function() {
 
     document.ondragover = function () {
-      $(body).addClass('is-dragging').removeClass('was-successful');
+      resetClasses();
+      $(body).addClass('is-dragging')
       updateStatus(msg.ui['dropToInstall']);
       return false;
     };
 
     document.ondragleave = document.ondragend = function () {
-      $(body).removeClass('is-dragging');
+      resetClasses();
       updateStatus(msg.ui['dragToInstall']);
       return false;
     };
 
     document.ondrop = function (e) {
-      $(body).removeClass('is-dragging');
+      resetClasses();
       e.preventDefault();
       var file = e.dataTransfer.files[0];
       console.log('detected:',file.path);
