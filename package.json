@@ -1,7 +1,7 @@
 {
   "name": "zxpinstaller",
   "version": "1.1.0",
-  "description": "An simple cross platform ZXP installer.",
+  "description": "An open source Adobe extension installer",
   "main": "index.js",
   "priave": true,
   "dependencies": {
