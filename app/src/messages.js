@@ -1,6 +1,7 @@
 global.Messages = function() {
 
   this.errors = {
+    159: 'ZXPInstaller cannot install this type of file. Please use a .zxp file.',
     175: 'You must run ZXPInstaller in administrator mode to install extensions.',
     201: 'Installation failed because the extension invalid.',
     411: 'Installation failed because the extension is not compatible with the installed applications.',
