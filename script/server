@@ -3,4 +3,4 @@
 #
 # run the jekyll server
 
-bundle exec jekyll serve --watch
+bundle exec jekyll serve --config _config.yml,_dev_config.yml --watch
