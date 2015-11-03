@@ -5,7 +5,7 @@ keywords: adobe photoshop indesign illustrator extension installer
 
 # Current release of ZXPInstaller. When updating, be sure there is a GitHub
 # release that matches this version number, and that it includes binaries called
-# `ZXPInstallerSetup.dmg`, and `ZXPInstallerSetup.exe`. If it does not, the
+# `ZXPInstaller.dmg`, and `ZXPInstaller.Setup.exe`. If it does not, the
 # download links will break.
 current_release: 1.2.0
 
