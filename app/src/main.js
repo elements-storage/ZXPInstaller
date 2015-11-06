@@ -51,7 +51,7 @@ global.View = function() {
   var installationFailed = function(error) {
 
     toggleSpinner(false);
-    updateStatus(msg.errors[error] || 'Error: ' + error);
+    updateStatus(msg.errors.get(error) || 'Error: ' + error);
   }
 
   var installationSuccess = function() {
