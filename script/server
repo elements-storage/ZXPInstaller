@@ -3,4 +3,6 @@
 #
 # run the jekyll server
 
+rm -rf ./node_modules
+rm -rf ./release
 bundle exec jekyll serve --config _config.yml,_dev_config.yml --watch
