@@ -1,6 +1,7 @@
 var platform = require("os").platform;
 var install_process = require("child_process");
 var path = require('path');
+var errors = (new global.Messages()).errors
 
 global.installer = function() {
 
@@ -34,7 +35,8 @@ global.installer = function() {
         spawn.stdout.on('data',function(data){
             console.log('stdout: ' + data.toString());
             var logbits = /-(\d+)/.exec(data.toString());
-            reject(logbits && logbits[1] ? parseInt(logbits[1]) : null);
+            var code = logbits && logbits[1] ? parseInt(logbits[1]) : null;
+            reject(errors.get(code) || 'Error: ' + data.toString());
         });
 
         spawn.stderr.on('data',function(data){
