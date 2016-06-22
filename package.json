@@ -1,6 +1,6 @@
 {
   "name": "zxpinstaller",
-  "version": "1.3.0",
+  "version": "1.5.0",
   "description": "An open source Adobe extension installer",
   "main": "index.js",
   "priave": true,
