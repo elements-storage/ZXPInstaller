@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Feb 26 2015 08:29:20</string>
+	<string>Thu May 05 2016 20:59:09</string>
 	<key>BuildMachineOSBuild</key>
-	<string>13E28</string>
+	<string>15D21</string>
 	<key>BuildVersion</key>
 	<string>1.584361</string>
 	<key>CFBundleDevelopmentRegion</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleExecutable</key>
 	<string>adobe_caps</string>
 	<key>CFBundleGetInfoString</key>
-	<string>adobe_caps 9.0.0.4, "© 2005-2013 Adobe Systems Incorporated and its licensors. All rights reserved."</string>
+	<string>adobe_caps 10.0.0.5, "© 2005-2015 Adobe Systems Incorporated. All rights reserved."</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.adobe.adobe_caps</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -23,24 +23,28 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>adobe_caps 9.0.0.4</string>
+	<string>adobe_caps 10.0.0.5</string>
 	<key>CFBundleSignature</key>
 	<string>ADBE</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
 	<key>CFBundleVersion</key>
-	<string>9.0.0.4</string>
+	<string>10.0.0.5</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>5A3005</string>
+	<string>7C68</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>13A595</string>
+	<string>15C43</string>
 	<key>DTSDKName</key>
-	<string>macosx10.9</string>
+	<string>macosx10.11</string>
 	<key>DTXcode</key>
-	<string>0502</string>
+	<string>0720</string>
 	<key>DTXcodeBuild</key>
-	<string>5A3005</string>
+	<string>7C68</string>
 </dict>
 </plist>
