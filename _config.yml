@@ -11,7 +11,7 @@ current_release: 1.5.0
 
 # Jekyll options
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: css
   style: compressed
