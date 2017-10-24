@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration version="3.1.21">
+<Configuration version="3.1.26">
 <Product name="Virtual Product" id="0">
 <Data key="others-destination">$downloads</Data>
 </Product>
@@ -1902,7 +1902,7 @@
 <Data key="$IconPath">$installfolder/configuration/Icon.png</Data>
 <Data key="MinExManVersion">7.3.2</Data>
 </Product>
-<Product name="premierepro-10.3" id="68">
+<Product name="premierepro-10.0" id="68">
 <Data key="$premierepro">$InstallFolder</Data>
 <Data key="ProductName">Premiere</Data>
 <Data key="DisplayName">Premiere Pro CC 2015.3</Data>
@@ -2286,6 +2286,1828 @@
 <Data key="atn-destination">$downloads</Data>
 <Data key="pat-destination">$downloads</Data>
 <Data key="aco-destination">$downloads</Data>
+</Product>
+<Product name="aftereffects-14.0" platform="mac" id="81">
+    <Data key="HostNameForCSXS">AEFT</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$RootFolder">$InstallFolder</Data>
+    <Data key="ProductName">After Effects</Data>
+    <Data key="DisplayName">After Effects CC 2017</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/ae_icon_24.png</Data>
+    <Data key="suite">2017</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="ame-11.0" id="82">
+    <Data key="$ame">$InstallFolder</Data>
+    <Data key="ProductName">AME</Data>
+    <Data key="DisplayName">Adobe Media Encoder CC 2017</Data>
+    <Data key="suite">2017</Data>
+    <Data key="HostNameForCSXS">AME</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/ame_app_icon24.png</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="flash-16.0" platform="win" id="83">
+    <Data key="HostNameForCSXS">FLPR</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$RootFolder">$InstallFolder</Data>
+    <Data key="$RootFolderLocal">$InstallFolder/$LOCALE</Data>
+    <Data key="$flash">$userdatafolder/Adobe/Animate CC 2017/$LOCALE/Configuration</Data>
+    <Data key="$UserBinfolder">$userdatafolder/Adobe/Animate CC 2017/$LOCALE/Configuration</Data>
+    <Data key="ProductName">Flash</Data>
+    <Data key="DisplayName">Animate CC 2017</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/appIcon.png</Data>
+    <Data key="suite">2017</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="flash-16.0" platform="mac" id="84">
+    <Data key="HostNameForCSXS">FLPR</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$RootFolder">$InstallFolder</Data>
+    <Data key="$RootFolderLocal">$InstallFolder/../../$LOCALE</Data>
+    <Data key="$flash">$userdatafolder/Adobe/Animate CC 2017/$LOCALE/Configuration</Data>
+    <Data key="$UserBinfolder">$userdatafolder/Adobe/Animate CC 2017/$LOCALE/Configuration</Data>
+    <Data key="ProductName">Flash</Data>
+    <Data key="DisplayName">Animate CC 2017</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/appIcon.png</Data>
+    <Data key="suite">2017</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="audition-10.0" id="85">
+    <Data key="$audition">$InstallFolder</Data>
+    <Data key="ProductName">Audition</Data>
+    <Data key="DisplayName">Audition CC 2017</Data>
+    <Data key="suite">2017</Data>
+    <Data key="HostNameForCSXS">AUDT</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="illustrator-21.032" platform="win" id="86">
+    <Data key="$illustrator">$InstallFolder/../../..</Data>
+    <Data key="$plugin">$InstallFolder/../../../Plug-ins</Data>
+    <Data key="$scripting">$InstallFolder/../../../Scripting</Data>
+    <Data key="$presets">$InstallFolder/../../../Presets</Data>
+    <Data key="$localizedpresets">$presets/$Locale</Data>
+    <Data key="$localizedUserPresets">$UserDataFolder/Adobe/Adobe Illustrator 21 Settings/$LOCALE</Data>
+    <Data key="DisplayName">Illustrator CC 2017 32</Data>
+    <Data key="ProductName">Illustrator32</Data>
+    <Data key="FamilyName">Illustrator</Data>
+    <Data key="suite">2017</Data>
+    <Data key="HostNameForCSXS">ILST</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/ai_app_24px.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">32</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+    <Data key="NonZxpFileType">ai,ase</Data>
+    <Data key="ai-destination">$downloads</Data>
+    <Data key="ase-destination">$downloads</Data>
+</Product>
+<Product name="illustrator-21.064" platform="win" id="87">
+    <Data key="$illustrator">$InstallFolder/../../..</Data>
+    <Data key="$plugin">$InstallFolder/../../../Plug-ins</Data>
+    <Data key="$scripting">$InstallFolder/../../../Scripting</Data>
+    <Data key="$presets">$InstallFolder/../../../Presets</Data>
+    <Data key="$localizedpresets">$presets/$Locale</Data>
+    <Data key="$localizedUserPresets">$UserDataFolder/Adobe/Adobe Illustrator 21 Settings/$LOCALE</Data>
+    <Data key="DisplayName">Illustrator CC 2017</Data>
+    <Data key="ProductName">Illustrator64</Data>
+    <Data key="FamilyName">Illustrator</Data>
+    <Data key="suite">2017</Data>
+    <Data key="HostNameForCSXS">ILST</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/ai_app_24px.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+    <Data key="NonZxpFileType">ai,ase</Data>
+    <Data key="ai-destination">$downloads</Data>
+    <Data key="ase-destination">$downloads</Data>
+</Product>
+<Product name="illustrator-21.064" platform="mac" id="88">
+    <Data key="$illustrator">$InstallFolder</Data>
+    <Data key="$plugin">$InstallFolder/Plug-ins.localized</Data>
+    <Data key="$scripting">$InstallFolder/Scripting.localized</Data>
+    <Data key="$presets">$InstallFolder/Presets.localized</Data>
+    <Data key="$localizedpresets">$presets/$Locale</Data>
+    <Data key="$localizedUserPresets">$UserDataFolder/Adobe/Adobe Illustrator 21 Settings/$LOCALE</Data>
+    <Data key="DisplayName">Illustrator CC 2017</Data>
+    <Data key="ProductName">Illustrator</Data>
+    <Data key="FamilyName">Illustrator</Data>
+    <Data key="suite">2017</Data>
+    <Data key="HostNameForCSXS">ILST</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/ai_app_24px.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+    <Data key="NonZxpFileType">ai,ase</Data>
+    <Data key="ai-destination">$downloads</Data>
+    <Data key="ase-destination">$downloads</Data>
+</Product>
+<Product name="indesign-12.032" platform="win" id="89">
+    <Data key="$indesign">$InstallFolder</Data>
+    <Data key="$indesign_user">$UserDataFolder/Adobe/Adobe InDesign CC 2017</Data>
+    <Data key="DisplayName">InDesign CC 2017 32</Data>
+    <Data key="ProductName">InDesign</Data>
+    <Data key="FamilyName">InDesign</Data>
+    <Data key="suite">2017</Data>
+    <Data key="HostNameForCSXS">IDSN</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/Icon.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">32</Data>
+    <Data key="$PreExtensionFolder" locale="ja_JP">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-J/ja_JP/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="ko_KR">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-J/ko_KR/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_CN">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-J/zh_CN/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_TW">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-J/zh_TW/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_AE">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-ME/en_AE/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_IL">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-ME/en_IL/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="fr_MA">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-ME/fr_MA/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0/$locale/Extensions32
+    </Data>
+    <Data key="$PluginConfigFile" locale="ja_JP">
+        $UserDataFolder/Adobe/InDesign/Version 12.0-J/ja_JP/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="ko_KR">
+        $UserDataFolder/Adobe/InDesign/Version 12.0-J/ko_KR/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_CN">
+        $UserDataFolder/Adobe/InDesign/Version 12.0-J/zh_CN/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_TW">
+        $UserDataFolder/Adobe/InDesign/Version 12.0-J/zh_TW/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_AE">
+        $UserDataFolder/Adobe/InDesign/Version 12.0-ME/en_AE/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_IL">
+        $UserDataFolder/Adobe/InDesign/Version 12.0-ME/en_IL/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_MA">
+        $UserDataFolder/Adobe/InDesign/Version 12.0-ME/fr_FR/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="es_MX">
+        $UserDataFolder/Adobe/InDesign/Version 12.0/es_ES/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_CA">
+        $UserDataFolder/Adobe/InDesign/Version 12.0/fr_FR/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile">
+        $UserDataFolder/Adobe/InDesign/Version 12.0/$locale/PlugInConfig32.txt
+    </Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="indesign-12.064" platform="win" id="90">
+    <Data key="$indesign">$InstallFolder</Data>
+    <Data key="$indesign_user">$UserDataFolder/Adobe/Adobe InDesign CC 2017</Data>
+    <Data key="DisplayName">InDesign CC 2017 64</Data>
+    <Data key="ProductName">InDesign64</Data>
+    <Data key="FamilyName">InDesign</Data>
+    <Data key="suite">2017</Data>
+    <Data key="HostNameForCSXS">IDSN</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/Icon.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$PreExtensionFolder" locale="ja_JP">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-J/ja_JP/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="ko_KR">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-J/ko_KR/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_CN">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-J/zh_CN/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_TW">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-J/zh_TW/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_AE">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-ME/en_AE/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_IL">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-ME/en_IL/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="fr_MA">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-ME/fr_MA/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0/$locale/Extensions
+    </Data>
+    <Data key="$PluginConfigFile" locale="ja_JP">
+        $UserDataFolder/Adobe/InDesign/Version 12.0-J/ja_JP/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="ko_KR">
+        $UserDataFolder/Adobe/InDesign/Version 12.0-J/ko_KR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_CN">
+        $UserDataFolder/Adobe/InDesign/Version 12.0-J/zh_CN/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_TW">
+        $UserDataFolder/Adobe/InDesign/Version 12.0-J/zh_TW/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_AE">
+        $UserDataFolder/Adobe/InDesign/Version 12.0-ME/en_AE/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_IL">
+        $UserDataFolder/Adobe/InDesign/Version 12.0-ME/en_IL/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_MA">
+        $UserDataFolder/Adobe/InDesign/Version 12.0-ME/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="es_MX">
+        $UserDataFolder/Adobe/InDesign/Version 12.0/es_ES/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_CA">
+        $UserDataFolder/Adobe/InDesign/Version 12.0/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile">
+        $UserDataFolder/Adobe/InDesign/Version 12.0/$locale/PlugInConfig.txt
+    </Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="indesign-12.064" platform="mac" id="91">
+    <Data key="$indesign">$InstallFolder</Data>
+    <Data key="$indesign_user">$UserDataFolder/Adobe/Adobe InDesign CC 2017</Data>
+    <Data key="DisplayName">InDesign CC 2017</Data>
+    <Data key="ProductName">InDesign</Data>
+    <Data key="FamilyName">InDesign</Data>
+    <Data key="suite">2017</Data>
+    <Data key="HostNameForCSXS">IDSN</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/Icon.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$PreExtensionFolder" locale="ja_JP">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-J/ja_JP/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="ko_KR">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-J/ko_KR/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_CN">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-J/zh_CN/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_TW">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-J/zh_TW/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_AE">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-ME/en_AE/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_IL">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-ME/en_IL/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="fr_MA">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0-ME/fr_MA/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 12.0/$locale/Extensions
+    </Data>
+    <Data key="$PluginConfigFile" locale="ja_JP">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 12.0-J/ja_JP/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="ko_KR">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 12.0-J/ko_KR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_CN">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 12.0-J/zh_CN/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_TW">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 12.0-J/zh_TW/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_AE">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 12.0-ME/en_AE/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_IL">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 12.0-ME/en_IL/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_MA">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 12.0-ME/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="es_MX">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 12.0/es_ES/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_CA">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 12.0/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 12.0/$locale/PlugInConfig.txt
+    </Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="incopy-12.032" platform="win" id="92">
+    <Data key="$incopy">$InstallFolder</Data>
+    <Data key="$incopy_user">$UserDataFolder/Adobe/Adobe InCopy CC 2017</Data>
+    <Data key="DisplayName">InCopy CC 2017 32</Data>
+    <Data key="ProductName">InCopy</Data>
+    <Data key="FamilyName">InCopy</Data>
+    <Data key="suite">2017</Data>
+    <Data key="HostNameForCSXS">AICY</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/Icon.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">32</Data>
+    <Data key="$PreExtensionFolder" locale="ja_JP">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-J/ja_JP/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="ko_KR">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-J/ko_KR/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_CN">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-J/zh_CN/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_TW">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-J/zh_TW/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_AE">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-ME/en_AE/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_IL">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-ME/en_IL/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="fr_MA">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-ME/fr_MA/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0/$locale/Extensions32
+    </Data>
+    <Data key="$PluginConfigFile" locale="ja_JP">
+        $UserDataFolder/Adobe/InCopy/Version 12.0-J/ja_JP/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="ko_KR">
+        $UserDataFolder/Adobe/InCopy/Version 12.0-J/ko_KR/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_CN">
+        $UserDataFolder/Adobe/InCopy/Version 12.0-J/zh_CN/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_TW">
+        $UserDataFolder/Adobe/InCopy/Version 12.0-J/zh_TW/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_AE">
+        $UserDataFolder/Adobe/InCopy/Version 12.0-ME/en_AE/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_IL">
+        $UserDataFolder/Adobe/InCopy/Version 12.0-ME/en_IL/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_MA">
+        $UserDataFolder/Adobe/InCopy/Version 12.0-ME/fr_FR/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="es_MX">
+        $UserDataFolder/Adobe/InCopy/Version 12.0/es_ES/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_CA">
+        $UserDataFolder/Adobe/InCopy/Version 12.0/fr_FR/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile">
+        $UserDataFolder/Adobe/InCopy/Version 12.0/$locale/PlugInConfig32.txt
+    </Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="incopy-12.064" platform="win" id="93">
+    <Data key="$incopy">$InstallFolder</Data>
+    <Data key="$incopy_user">$UserDataFolder/Adobe/Adobe InCopy CC 2017</Data>
+    <Data key="DisplayName">InCopy CC 2017 64</Data>
+    <Data key="ProductName">InCopy64</Data>
+    <Data key="FamilyName">InCopy</Data>
+    <Data key="suite">2017</Data>
+    <Data key="HostNameForCSXS">AICY</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/Icon.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$PreExtensionFolder" locale="ja_JP">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-J/ja_JP/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="ko_KR">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-J/ko_KR/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_CN">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-J/zh_CN/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_TW">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-J/zh_TW/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_AE">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-ME/en_AE/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_IL">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-ME/en_IL/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="fr_MA">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-ME/fr_MA/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0/$locale/Extensions
+    </Data>
+    <Data key="$PluginConfigFile" locale="ja_JP">
+        $UserDataFolder/Adobe/InCopy/Version 12.0-J/ja_JP/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="ko_KR">
+        $UserDataFolder/Adobe/InCopy/Version 12.0-J/ko_KR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_CN">
+        $UserDataFolder/Adobe/InCopy/Version 12.0-J/zh_CN/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_TW">
+        $UserDataFolder/Adobe/InCopy/Version 12.0-J/zh_TW/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_AE">
+        $UserDataFolder/Adobe/InCopy/Version 12.0-ME/en_AE/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_IL">
+        $UserDataFolder/Adobe/InCopy/Version 12.0-ME/en_IL/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_MA">
+        $UserDataFolder/Adobe/InCopy/Version 12.0-ME/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="es_MX">
+        $UserDataFolder/Adobe/InCopy/Version 12.0/es_ES/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_CA">
+        $UserDataFolder/Adobe/InCopy/Version 12.0/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile">
+        $UserDataFolder/Adobe/InCopy/Version 12.0/$locale/PlugInConfig.txt
+    </Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="incopy-12.064" platform="mac" id="94">
+    <Data key="$incopy">$InstallFolder</Data>
+    <Data key="$incopy_user">$UserDataFolder/Adobe/Adobe InCopy CC 2017</Data>
+    <Data key="DisplayName">InCopy CC 2017</Data>
+    <Data key="ProductName">InCopy</Data>
+    <Data key="FamilyName">InCopy</Data>
+    <Data key="suite">2017</Data>
+    <Data key="HostNameForCSXS">AICY</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/Icon.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$PreExtensionFolder" locale="ja_JP">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-J/ja_JP/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="ko_KR">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-J/ko_KR/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_CN">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-J/zh_CN/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_TW">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-J/zh_TW/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_AE">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-ME/en_AE/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_IL">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-ME/en_IL/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="fr_MA">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0-ME/fr_MA/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 12.0/$locale/Extensions
+    </Data>
+    <Data key="$PluginConfigFile" locale="ja_JP">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 12.0-J/ja_JP/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="ko_KR">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 12.0-J/ko_KR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_CN">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 12.0-J/zh_CN/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_TW">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 12.0-J/zh_TW/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_AE">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 12.0-ME/en_AE/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_IL">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 12.0-ME/en_IL/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_MA">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 12.0-ME/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="es_MX">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 12.0/es_ES/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_CA">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 12.0/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 12.0/$locale/PlugInConfig.txt
+    </Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="prelude-6.0" id="95">
+    <Data key="ProductName">Prelude</Data>
+    <Data key="DisplayName">Prelude CC 2017</Data>
+    <Data key="$prelude">$InstallFolder</Data>
+    <Data key="suite">2017</Data>
+    <Data key="HostNameForCSXS">PRLD</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/pl_app_24.png</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="premierepro-11.0" id="96">
+    <Data key="$premierepro">$InstallFolder</Data>
+    <Data key="ProductName">Premiere</Data>
+    <Data key="DisplayName">Premiere Pro CC 2017</Data>
+    <Data key="suite">2017</Data>
+    <Data key="HostNameForCSXS">PPRO</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/pr_icon_24.png</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="photoshop-110.032" platform="win" id="97">
+    <Data key="$photoshopappfolder">$installfolder</Data>
+    <Data key="$pluginsfolder">$photoshopappfolder/Plug-Ins</Data>
+    <Data key="$presetsfolder">$photoshopappfolder/Presets</Data>
+    <Data key="$platform">Win</Data>
+    <Data key="$actions">$presetsfolder/Actions</Data>
+    <Data key="$blackandwhite">$presetsfolder/Black and White</Data>
+    <Data key="$brushes">$presetsfolder/Brushes</Data>
+    <Data key="$channelmixer">$presetsfolder/Channel Mixer</Data>
+    <Data key="$colorbooks">$presetsfolder/Color Books</Data>
+    <Data key="$colorrange">$presetsfolder/Color Range</Data>
+    <Data key="$colorswatches">$presetsfolder/Color Swatches</Data>
+    <Data key="$contours">$presetsfolder/Contours</Data>
+    <Data key="$curves">$presetsfolder/Curves</Data>
+    <Data key="$customshapes">$presetsfolder/Custom Shapes</Data>
+    <Data key="$duotones">$presetsfolder/Duotones</Data>
+    <Data key="$exposure">$presetsfolder/Exposure</Data>
+    <Data key="$gradients">$presetsfolder/Gradients</Data>
+    <Data key="$huesat">$presetsfolder/Hue Sat</Data>
+    <Data key="$imagestatistics">$presetsfolder/Image Statistics</Data>
+    <Data key="$keyboardshortcuts">$presetsfolder/Keyboard Shortcuts</Data>
+    <Data key="$layouts">$presetsfolder/Layouts</Data>
+    <Data key="$lenscorrection">$presetsfolder/Lens Correction</Data>
+    <Data key="$levels">$presetsfolder/Levels</Data>
+    <Data key="$liquifymeshes">$presetsfolder/Liquify Meshes</Data>
+    <Data key="$menucustomization">$presetsfolder/Menu Customization</Data>
+    <Data key="$optimizedcolors">$presetsfolder/Optimized Colors</Data>
+    <Data key="$optimizedoutputSettings">$presetsfolder/Optimized Output Settings</Data>
+    <Data key="$optimizedsettings">$presetsfolder/Optimized Settings</Data>
+    <Data key="$patterns">$presetsfolder/Patterns</Data>
+    <Data key="$reducenoise">$presetsfolder/Reduce Noise</Data>
+    <Data key="$replacecolor">$presetsfolder/Replace Color</Data>
+    <Data key="$scripts">$presetsfolder/Scripts</Data>
+    <Data key="$selectivecolor">$presetsfolder/Selective Color</Data>
+    <Data key="$shadowhighlight">$presetsfolder/Shadow Highlight</Data>
+    <Data key="$smartsharpen">$presetsfolder/Smart Sharpen</Data>
+    <Data key="$styles">$presetsfolder/Styles</Data>
+    <Data key="$textures">$presetsfolder/Textures</Data>
+    <Data key="$tools">$presetsfolder/Tools</Data>
+    <Data key="$variations">$presetsfolder/Variations</Data>
+    <Data key="$webphotogallery">$presetsfolder/Web Photo Gallery</Data>
+    <Data key="$workspaces">$presetsfolder/Workspaces</Data>
+    <Data key="$zoomify">$presetsfolder/Zoomify</Data>
+    <Data key="$hueandsaturation">$presetsfolder/Hue and Saturation</Data>
+    <Data key="$lights">$presetsfolder/Lights</Data>
+    <Data key="$materials">$presetsfolder/Materials</Data>
+    <Data key="$meshes">$presetsfolder/Meshes</Data>
+    <Data key="$rendersettings">$presetsfolder/Render Settings</Data>
+    <Data key="$volumes">$presetsfolder/Volumes</Data>
+    <Data key="$widgets">$presetsfolder/Widgets</Data>
+    <Data key="$localesfolder">$photoshopappfolder/Locales</Data>
+    <Data key="$additionalplugins">$localesfolder/$LOCALE/Additional Plug-ins</Data>
+    <Data key="$additionalpresets">$localesfolder/$LOCALE/Additional Presets</Data>
+    <Data key="$localeskeyboardshortcuts">$localesfolder/$LOCALE/Additional Presets/$platform/Keyboard Shortcuts</Data>
+    <Data key="$localesmenucustomization">$localesfolder/$LOCALE/Additional Presets/$platform/Menu Customization</Data>
+    <Data key="$localesworkspaces">$localesfolder/$LOCALE/Additional Presets/$platform/Workspaces</Data>
+    <Data key="$automate">$pluginsfolder/Automate</Data>
+    <Data key="$digimarc">$pluginsfolder/Digimarc</Data>
+    <Data key="$displacementmaps">$pluginsfolder/Displacement Maps</Data>
+    <Data key="$effects">$pluginsfolder/Effects</Data>
+    <Data key="$extensions">$pluginsfolder/Extensions</Data>
+    <Data key="$fileformats">$pluginsfolder/File Formats</Data>
+    <Data key="$filters">$pluginsfolder/Filters</Data>
+    <Data key="$imagestacks">$pluginsfolder/Image Stacks</Data>
+    <Data key="$importexport">$pluginsfolder/Import-Export</Data>
+    <Data key="$measurements">$pluginsfolder/Measurements</Data>
+    <Data key="$panels">$pluginsfolder/Panels</Data>
+    <Data key="$parser">$pluginsfolder/Parser</Data>
+    <Data key="$3dengines">$pluginsfolder/3D Engines</Data>
+    <Data key="$lightingstyles">$pluginsfolder/Filters/Lighting Styles</Data>
+    <Data key="$matlab">$photoshopappfolder/MATLAB</Data>
+    <Data key="$photoshop">$UserDataFolder/Adobe/Adobe Photoshop CC 2017/Configuration</Data>
+    <Data key="DisplayName">Photoshop CC 2017 32</Data>
+    <Data key="ProductName">Photoshop32</Data>
+    <Data key="FamilyName">Photoshop</Data>
+    <Data key="suite">2016</Data>
+    <Data key="$IconPath">$installfolder/Configuration/PS_exman_24px.png</Data>
+    <Data key="HostNameForCSXS">PHSP</Data>
+    <Data key="Bit">32</Data>
+    <Data key="$extraToken">$photoshopappfolder</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+    <Data key="NonZxpFileType">abr,atn,pat,aco</Data>
+    <Data key="abr-destination">$downloads</Data>
+    <Data key="atn-destination">$downloads</Data>
+    <Data key="pat-destination">$downloads</Data>
+    <Data key="aco-destination">$downloads</Data>
+</Product>
+<Product name="photoshop-110.064" platform="win" id="98">
+    <Data key="$photoshopappfolder">$installfolder</Data>
+    <Data key="$pluginsfolder">$photoshopappfolder/Plug-Ins</Data>
+    <Data key="$presetsfolder">$photoshopappfolder/Presets</Data>
+    <Data key="$platform">Win</Data>
+    <Data key="$actions">$presetsfolder/Actions</Data>
+    <Data key="$blackandwhite">$presetsfolder/Black and White</Data>
+    <Data key="$brushes">$presetsfolder/Brushes</Data>
+    <Data key="$channelmixer">$presetsfolder/Channel Mixer</Data>
+    <Data key="$colorbooks">$presetsfolder/Color Books</Data>
+    <Data key="$colorrange">$presetsfolder/Color Range</Data>
+    <Data key="$colorswatches">$presetsfolder/Color Swatches</Data>
+    <Data key="$contours">$presetsfolder/Contours</Data>
+    <Data key="$curves">$presetsfolder/Curves</Data>
+    <Data key="$customshapes">$presetsfolder/Custom Shapes</Data>
+    <Data key="$duotones">$presetsfolder/Duotones</Data>
+    <Data key="$exposure">$presetsfolder/Exposure</Data>
+    <Data key="$gradients">$presetsfolder/Gradients</Data>
+    <Data key="$huesat">$presetsfolder/Hue Sat</Data>
+    <Data key="$imagestatistics">$presetsfolder/Image Statistics</Data>
+    <Data key="$keyboardshortcuts">$presetsfolder/Keyboard Shortcuts</Data>
+    <Data key="$layouts">$presetsfolder/Layouts</Data>
+    <Data key="$lenscorrection">$presetsfolder/Lens Correction</Data>
+    <Data key="$levels">$presetsfolder/Levels</Data>
+    <Data key="$liquifymeshes">$presetsfolder/Liquify Meshes</Data>
+    <Data key="$menucustomization">$presetsfolder/Menu Customization</Data>
+    <Data key="$optimizedcolors">$presetsfolder/Optimized Colors</Data>
+    <Data key="$optimizedoutputSettings">$presetsfolder/Optimized Output Settings</Data>
+    <Data key="$optimizedsettings">$presetsfolder/Optimized Settings</Data>
+    <Data key="$patterns">$presetsfolder/Patterns</Data>
+    <Data key="$reducenoise">$presetsfolder/Reduce Noise</Data>
+    <Data key="$replacecolor">$presetsfolder/Replace Color</Data>
+    <Data key="$scripts">$presetsfolder/Scripts</Data>
+    <Data key="$selectivecolor">$presetsfolder/Selective Color</Data>
+    <Data key="$shadowhighlight">$presetsfolder/Shadow Highlight</Data>
+    <Data key="$smartsharpen">$presetsfolder/Smart Sharpen</Data>
+    <Data key="$styles">$presetsfolder/Styles</Data>
+    <Data key="$textures">$presetsfolder/Textures</Data>
+    <Data key="$tools">$presetsfolder/Tools</Data>
+    <Data key="$variations">$presetsfolder/Variations</Data>
+    <Data key="$webphotogallery">$presetsfolder/Web Photo Gallery</Data>
+    <Data key="$workspaces">$presetsfolder/Workspaces</Data>
+    <Data key="$zoomify">$presetsfolder/Zoomify</Data>
+    <Data key="$hueandsaturation">$presetsfolder/Hue and Saturation</Data>
+    <Data key="$lights">$presetsfolder/Lights</Data>
+    <Data key="$materials">$presetsfolder/Materials</Data>
+    <Data key="$meshes">$presetsfolder/Meshes</Data>
+    <Data key="$rendersettings">$presetsfolder/Render Settings</Data>
+    <Data key="$volumes">$presetsfolder/Volumes</Data>
+    <Data key="$widgets">$presetsfolder/Widgets</Data>
+    <Data key="$localesfolder">$photoshopappfolder/Locales</Data>
+    <Data key="$additionalplugins">$localesfolder/$LOCALE/Additional Plug-ins</Data>
+    <Data key="$additionalpresets">$localesfolder/$LOCALE/Additional Presets</Data>
+    <Data key="$localeskeyboardshortcuts">$localesfolder/$LOCALE/Additional Presets/$platform/Keyboard Shortcuts</Data>
+    <Data key="$localesmenucustomization">$localesfolder/$LOCALE/Additional Presets/$platform/Menu Customization</Data>
+    <Data key="$localesworkspaces">$localesfolder/$LOCALE/Additional Presets/$platform/Workspaces</Data>
+    <Data key="$automate">$pluginsfolder/Automate</Data>
+    <Data key="$digimarc">$pluginsfolder/Digimarc</Data>
+    <Data key="$displacementmaps">$pluginsfolder/Displacement Maps</Data>
+    <Data key="$effects">$pluginsfolder/Effects</Data>
+    <Data key="$extensions">$pluginsfolder/Extensions</Data>
+    <Data key="$fileformats">$pluginsfolder/File Formats</Data>
+    <Data key="$filters">$pluginsfolder/Filters</Data>
+    <Data key="$imagestacks">$pluginsfolder/Image Stacks</Data>
+    <Data key="$importexport">$pluginsfolder/Import-Export</Data>
+    <Data key="$measurements">$pluginsfolder/Measurements</Data>
+    <Data key="$panels">$pluginsfolder/Panels</Data>
+    <Data key="$parser">$pluginsfolder/Parser</Data>
+    <Data key="$3dengines">$pluginsfolder/3D Engines</Data>
+    <Data key="$lightingstyles">$pluginsfolder/Filters/Lighting Styles</Data>
+    <Data key="$matlab">$photoshopappfolder/MATLAB</Data>
+    <Data key="$photoshop">$UserDataFolder/Adobe/Adobe Photoshop CC 2017/Configuration</Data>
+    <Data key="DisplayName">Photoshop CC 2017 64</Data>
+    <Data key="ProductName">Photoshop64</Data>
+    <Data key="FamilyName">Photoshop</Data>
+    <Data key="suite">2016</Data>
+    <Data key="$IconPath">$installfolder/Configuration/PS_exman_24px.png</Data>
+    <Data key="HostNameForCSXS">PHSP</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+    <Data key="NonZxpFileType">abr,atn,pat,aco</Data>
+    <Data key="abr-destination">$downloads</Data>
+    <Data key="atn-destination">$downloads</Data>
+    <Data key="pat-destination">$downloads</Data>
+    <Data key="aco-destination">$downloads</Data>
+</Product>
+<Product name="photoshop-110.032" platform="mac" id="99">
+    <Data key="$photoshopappfolder">$installfolder</Data>
+    <Data key="$pluginsfolder">$photoshopappfolder/Plug-Ins</Data>
+    <Data key="$presetsfolder">$photoshopappfolder/Presets</Data>
+    <Data key="$platform">Mac</Data>
+    <Data key="$actions">$presetsfolder/Actions</Data>
+    <Data key="$blackandwhite">$presetsfolder/Black and White</Data>
+    <Data key="$brushes">$presetsfolder/Brushes</Data>
+    <Data key="$channelmixer">$presetsfolder/Channel Mixer</Data>
+    <Data key="$colorbooks">$presetsfolder/Color Books</Data>
+    <Data key="$colorrange">$presetsfolder/Color Range</Data>
+    <Data key="$colorswatches">$presetsfolder/Color Swatches</Data>
+    <Data key="$contours">$presetsfolder/Contours</Data>
+    <Data key="$curves">$presetsfolder/Curves</Data>
+    <Data key="$customshapes">$presetsfolder/Custom Shapes</Data>
+    <Data key="$duotones">$presetsfolder/Duotones</Data>
+    <Data key="$exposure">$presetsfolder/Exposure</Data>
+    <Data key="$gradients">$presetsfolder/Gradients</Data>
+    <Data key="$huesat">$presetsfolder/Hue Sat</Data>
+    <Data key="$imagestatistics">$presetsfolder/Image Statistics</Data>
+    <Data key="$keyboardshortcuts">$presetsfolder/Keyboard Shortcuts</Data>
+    <Data key="$layouts">$presetsfolder/Layouts</Data>
+    <Data key="$lenscorrection">$presetsfolder/Lens Correction</Data>
+    <Data key="$levels">$presetsfolder/Levels</Data>
+    <Data key="$liquifymeshes">$presetsfolder/Liquify Meshes</Data>
+    <Data key="$menucustomization">$presetsfolder/Menu Customization</Data>
+    <Data key="$optimizedcolors">$presetsfolder/Optimized Colors</Data>
+    <Data key="$optimizedoutputSettings">$presetsfolder/Optimized Output Settings</Data>
+    <Data key="$optimizedsettings">$presetsfolder/Optimized Settings</Data>
+    <Data key="$patterns">$presetsfolder/Patterns</Data>
+    <Data key="$reducenoise">$presetsfolder/Reduce Noise</Data>
+    <Data key="$replacecolor">$presetsfolder/Replace Color</Data>
+    <Data key="$scripts">$presetsfolder/Scripts</Data>
+    <Data key="$selectivecolor">$presetsfolder/Selective Color</Data>
+    <Data key="$shadowhighlight">$presetsfolder/Shadow Highlight</Data>
+    <Data key="$smartsharpen">$presetsfolder/Smart Sharpen</Data>
+    <Data key="$styles">$presetsfolder/Styles</Data>
+    <Data key="$textures">$presetsfolder/Textures</Data>
+    <Data key="$tools">$presetsfolder/Tools</Data>
+    <Data key="$variations">$presetsfolder/Variations</Data>
+    <Data key="$webphotogallery">$presetsfolder/Web Photo Gallery</Data>
+    <Data key="$workspaces">$presetsfolder/Workspaces</Data>
+    <Data key="$zoomify">$presetsfolder/Zoomify</Data>
+    <Data key="$hueandsaturation">$presetsfolder/Hue and Saturation</Data>
+    <Data key="$lights">$presetsfolder/Lights</Data>
+    <Data key="$materials">$presetsfolder/Materials</Data>
+    <Data key="$meshes">$presetsfolder/Meshes</Data>
+    <Data key="$rendersettings">$presetsfolder/Render Settings</Data>
+    <Data key="$volumes">$presetsfolder/Volumes</Data>
+    <Data key="$widgets">$presetsfolder/Widgets</Data>
+    <Data key="$localesfolder">$photoshopappfolder/Locales</Data>
+    <Data key="$additionalplugins">$localesfolder/$LOCALE/Additional Plug-ins</Data>
+    <Data key="$additionalpresets">$localesfolder/$LOCALE/Additional Presets</Data>
+    <Data key="$localeskeyboardshortcuts">$localesfolder/$LOCALE/Additional Presets/$platform/Keyboard Shortcuts</Data>
+    <Data key="$localesmenucustomization">$localesfolder/$LOCALE/Additional Presets/$platform/Menu Customization</Data>
+    <Data key="$localesworkspaces">$localesfolder/$LOCALE/Additional Presets/$platform/Workspaces</Data>
+    <Data key="$automate">$pluginsfolder/Automate</Data>
+    <Data key="$digimarc">$pluginsfolder/Digimarc</Data>
+    <Data key="$displacementmaps">$pluginsfolder/Displacement Maps</Data>
+    <Data key="$effects">$pluginsfolder/Effects</Data>
+    <Data key="$extensions">$pluginsfolder/Extensions</Data>
+    <Data key="$fileformats">$pluginsfolder/File Formats</Data>
+    <Data key="$filters">$pluginsfolder/Filters</Data>
+    <Data key="$imagestacks">$pluginsfolder/Image Stacks</Data>
+    <Data key="$importexport">$pluginsfolder/Import-Export</Data>
+    <Data key="$measurements">$pluginsfolder/Measurements</Data>
+    <Data key="$panels">$pluginsfolder/Panels</Data>
+    <Data key="$parser">$pluginsfolder/Parser</Data>
+    <Data key="$3dengines">$pluginsfolder/3D Engines</Data>
+    <Data key="$lightingstyles">$pluginsfolder/Filters/Lighting Styles</Data>
+    <Data key="$matlab">$photoshopappfolder/MATLAB</Data>
+    <Data key="$photoshop">$UserDataFolder/Adobe/Adobe Photoshop CC 2017/Configuration</Data>
+    <Data key="DisplayName">Photoshop CC 2017</Data>
+    <Data key="ProductName">Photoshop</Data>
+    <Data key="FamilyName">Photoshop</Data>
+    <Data key="suite">2016</Data>
+    <Data key="$IconPath">$installfolder/Configuration/PS_exman_24px.png</Data>
+    <Data key="HostNameForCSXS">PHSP</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+    <Data key="NonZxpFileType">abr,atn,pat,aco</Data>
+    <Data key="abr-destination">$downloads</Data>
+    <Data key="atn-destination">$downloads</Data>
+    <Data key="pat-destination">$downloads</Data>
+    <Data key="aco-destination">$downloads</Data>
+</Product>
+<Product name="aftereffects-14.0" platform="win" id="100">
+    <Data key="HostNameForCSXS">AEFT</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$RootFolder">$InstallFolder</Data>
+    <Data key="ProductName">After Effects</Data>
+    <Data key="DisplayName">After Effects CC 2017</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/ae_icon_24.png</Data>
+    <Data key="suite">2017</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="dreamweaver-17.0" id="101">
+    <Data key="$sharedextensionfolder">$shareddatafolder/Adobe/Dreamweaver CC 2017/$LOCALE/Configuration/Extensions</Data>
+    <Data key="$dreamweaver">$installfolder</Data>
+    <Data key="$dreamweaver/Configuration">$userdatafolder/Adobe/Dreamweaver CC 2017/$LOCALE/Configuration</Data>
+    <Data key="$UserBinfolder">$userdatafolder/Adobe/Dreamweaver CC 2017/$LOCALE</Data>
+    <Data key="HostNameForCSXS">DRWV</Data>
+    <Data key="Bit">64</Data>
+    <Data key="suite">2017</Data>
+    <Data key="ProductName">Dreamweaver64</Data>
+    <Data key="DisplayName">Adobe Dreamweaver CC 2017</Data>
+    <Data key="FamilyName">Dreamweaver</Data>
+    <Data key="$IconPath">$installfolder/configuration/Icon.png</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="dreamweaver-17.0.32" platform="win" id="102">
+    <Data key="$sharedextensionfolder">$shareddatafolder/Adobe/Dreamweaver CC 2017/$LOCALE/Configuration/Extensions</Data>
+    <Data key="$dreamweaver">$installfolder</Data>
+    <Data key="$dreamweaver/Configuration">$userdatafolder/Adobe/Dreamweaver CC 2017/$LOCALE/Configuration</Data>
+    <Data key="$UserBinfolder">$userdatafolder/Adobe/Dreamweaver CC 2017/$LOCALE</Data>
+    <Data key="HostNameForCSXS">DRWV</Data>
+    <Data key="Bit">32</Data>
+    <Data key="suite">2017</Data>
+    <Data key="ProductName">Dreamweaver32</Data>
+    <Data key="DisplayName">Adobe Dreamweaver CC 2017</Data>
+    <Data key="FamilyName">Dreamweaver</Data>
+    <Data key="$IconPath">$installfolder/configuration/Icon.png</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="dreamweaver-17.0.64" platform="win" id="103">
+    <Data key="$sharedextensionfolder">$shareddatafolder/Adobe/Dreamweaver CC 2017/$LOCALE/Configuration/Extensions</Data>
+    <Data key="$dreamweaver">$installfolder</Data>
+    <Data key="$dreamweaver/Configuration">$userdatafolder/Adobe/Dreamweaver CC 2017/$LOCALE/Configuration</Data>
+    <Data key="$UserBinfolder">$userdatafolder/Adobe/Dreamweaver CC 2017/$LOCALE</Data>
+    <Data key="HostNameForCSXS">DRWV</Data>
+    <Data key="Bit">64</Data>
+    <Data key="suite">2017</Data>
+    <Data key="ProductName">Dreamweaver64</Data>
+    <Data key="DisplayName">Adobe Dreamweaver CC 2017</Data>
+    <Data key="FamilyName">Dreamweaver</Data>
+    <Data key="$IconPath">$installfolder/configuration/Icon.png</Data>
+    <Data key="MinExManVersion">7.3.2</Data>
+</Product>
+<Product name="bridge-6.032" platform="win" id="104">
+    <Data key="$bridge">$InstallFolder</Data>
+    <Data key="$ExtensionInstallFolder">$adobecommon/Bridge CC Extensions</Data>
+    <Data key="ProductName">Bridge32</Data>
+    <Data key="DisplayName">Bridge CC 32</Data>
+    <Data key="HostNameForCSXS">BRDG</Data>
+	<Data key="FamilyName">Bridge</Data>
+    <Data key="Bit">32</Data>
+    <Data key="MinExManVersion">7.3.3</Data>
+</Product>
+<Product name="bridge-6.064" platform="win" id="105">
+    <Data key="$bridge">$InstallFolder</Data>
+    <Data key="$ExtensionInstallFolder">$applicationsupport64/Common Files/Adobe/Bridge CC Extensions</Data>
+    <Data key="ProductName">Bridge64</Data>
+    <Data key="DisplayName">Bridge CC</Data>
+    <Data key="HostNameForCSXS">BRDG</Data>
+    <Data key="FamilyName">Bridge</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.3</Data>
+</Product>
+<Product name="bridge-6.064" platform="mac" id="106">
+    <Data key="$bridge">$InstallFolder</Data>
+    <Data key="$ExtensionInstallFolder">$adobecommon/Bridge CC Extensions</Data>
+    <Data key="ProductName">Bridge64</Data>
+    <Data key="DisplayName">Bridge CC</Data>
+    <Data key="HostNameForCSXS">BRDG</Data>
+	<Data key="FamilyName">Bridge</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.3</Data>
+</Product>
+<Product name="bridge-6.332" platform="win" id="107">
+    <Data key="$bridge">$InstallFolder</Data>
+    <Data key="$ExtensionInstallFolder">$adobecommon/Bridge CC 2015 Extensions</Data>
+    <Data key="ProductName">Bridge32</Data>
+    <Data key="DisplayName">Bridge CC 2015 32</Data>
+    <Data key="suite">2015</Data>
+    <Data key="HostNameForCSXS">BRDG</Data>
+	<Data key="FamilyName">Bridge</Data>
+    <Data key="Bit">32</Data>
+    <Data key="MinExManVersion">7.3.3</Data>
+</Product>
+<Product name="bridge-6.364" platform="win" id="108">
+    <Data key="$bridge">$InstallFolder</Data>
+    <Data key="$ExtensionInstallFolder">$applicationsupport64/Common Files/Adobe/Bridge CC 2015 Extensions</Data>
+    <Data key="ProductName">Bridge64</Data>
+    <Data key="DisplayName">Bridge CC 2015</Data>
+    <Data key="suite">2015</Data>
+    <Data key="HostNameForCSXS">BRDG</Data>
+    <Data key="FamilyName">Bridge</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.3</Data>
+</Product>
+<Product name="bridge-6.364" platform="mac" id="109">
+    <Data key="$bridge">$InstallFolder</Data>
+    <Data key="$ExtensionInstallFolder">$adobecommon/Bridge CC 2015 Extensions</Data>
+    <Data key="ProductName">Bridge64</Data>
+    <Data key="DisplayName">Bridge CC 2015</Data>
+    <Data key="suite">2015</Data>
+    <Data key="HostNameForCSXS">BRDG</Data>
+	<Data key="FamilyName">Bridge</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.3</Data>
+</Product>
+
+<Product name="bridge-7.032" platform="win" id="110">
+    <Data key="$bridge">$InstallFolder</Data>
+    <Data key="$ExtensionInstallFolder">$adobecommon/Bridge CC 2017 Extensions</Data>
+    <Data key="ProductName">Bridge32</Data>
+    <Data key="DisplayName">Bridge CC 2017 32</Data>
+    <Data key="suite">2017</Data>
+	<Data key="FamilyName">Bridge</Data>
+    <Data key="HostNameForCSXS">BRDG</Data>
+    <Data key="Bit">32</Data>
+    <Data key="MinExManVersion">7.3.3</Data>
+</Product>
+<Product name="bridge-7.064" platform="win" id="111">
+    <Data key="$bridge">$InstallFolder</Data>
+    <Data key="$ExtensionInstallFolder">$applicationsupport64/Common Files/Adobe/Bridge CC 2017 Extensions</Data>
+    <Data key="ProductName">Bridge64</Data>
+    <Data key="DisplayName">Bridge CC 2017</Data>
+    <Data key="suite">2017</Data>
+    <Data key="FamilyName">Bridge</Data>
+    <Data key="HostNameForCSXS">BRDG</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.3</Data>
+</Product>
+<Product name="bridge-7.064" platform="mac" id="112">
+    <Data key="$bridge">$InstallFolder</Data>
+    <Data key="$ExtensionInstallFolder">$adobecommon/Bridge CC 2017 Extensions</Data>
+    <Data key="ProductName">Bridge64</Data>
+    <Data key="DisplayName">Bridge CC 2017</Data>
+    <Data key="suite">2017</Data>
+	<Data key="FamilyName">Bridge</Data>
+    <Data key="HostNameForCSXS">BRDG</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.3</Data>
+</Product>
+<Product name="aftereffects-15.0" platform="win" id="113">
+    <Data key="HostNameForCSXS">AEFT</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$RootFolder">$InstallFolder</Data>
+    <Data key="ProductName">After Effects</Data>
+    <Data key="DisplayName">After Effects CC</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/ae_icon_24.png</Data>
+    <Data key="suite">CC</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="aftereffects-15.0" platform="mac" id="114">
+    <Data key="HostNameForCSXS">AEFT</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$RootFolder">$InstallFolder</Data>
+    <Data key="ProductName">After Effects</Data>
+    <Data key="DisplayName">After Effects CC</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/ae_icon_24.png</Data>
+    <Data key="suite">CC</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="ame-12.0" id="115">
+    <Data key="$ame">$InstallFolder</Data>
+    <Data key="ProductName">AME</Data>
+    <Data key="DisplayName">Adobe Media Encoder CC</Data>
+    <Data key="suite">CC</Data>
+    <Data key="HostNameForCSXS">AME</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/ame_app_icon24.png</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="flash-18.0" platform="win" id="116">
+    <Data key="HostNameForCSXS">FLPR</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$RootFolder">$InstallFolder</Data>
+    <Data key="$RootFolderLocal">$InstallFolder/$LOCALE</Data>
+    <Data key="$flash">$userdatafolder/Adobe/Animate CC 2018/$LOCALE/Configuration</Data>
+    <Data key="$UserBinfolder">$userdatafolder/Adobe/Animate CC 2018/$LOCALE/Configuration</Data>
+    <Data key="ProductName">Flash</Data>
+    <Data key="DisplayName">Animate CC</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/appIcon.png</Data>
+    <Data key="suite">CC</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="flash-18.0" platform="mac" id="117">
+    <Data key="HostNameForCSXS">FLPR</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$RootFolder">$InstallFolder</Data>
+    <Data key="$RootFolderLocal">$InstallFolder/../../$LOCALE</Data>
+    <Data key="$flash">$userdatafolder/Adobe/Animate CC 2018/$LOCALE/Configuration</Data>
+    <Data key="$UserBinfolder">$userdatafolder/Adobe/Animate CC 2018/$LOCALE/Configuration</Data>
+    <Data key="ProductName">Flash</Data>
+    <Data key="DisplayName">Animate CC</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/appIcon.png</Data>
+    <Data key="suite">CC</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="audition-11.0" id="118">
+      <Data key="$audition">$InstallFolder</Data>
+      <Data key="ProductName">Audition</Data>
+      <Data key="DisplayName">Audition CC</Data>
+      <Data key="suite">CC</Data>
+      <Data key="HostNameForCSXS">AUDT</Data>
+      <Data key="Bit">64</Data>
+      <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="bridge-8.032" platform="win" id="119">
+    <Data key="$bridge">$InstallFolder</Data>
+    <Data key="$ExtensionInstallFolder">$adobecommon/Bridge CC 2018 Extensions</Data>
+    <Data key="ProductName">Bridge32</Data>
+    <Data key="DisplayName">Bridge CC 32</Data>
+    <Data key="suite">CC</Data>
+    <Data key="FamilyName">Bridge</Data>
+    <Data key="HostNameForCSXS">BRDG</Data>
+    <Data key="Bit">32</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="bridge-8.064" platform="win" id="120">
+    <Data key="$bridge">$InstallFolder</Data>
+    <Data key="$ExtensionInstallFolder">$applicationsupport64/Common Files/Adobe/Bridge CC 2018 Extensions</Data>
+    <Data key="ProductName">Bridge64</Data>
+    <Data key="DisplayName">Bridge CC</Data>
+    <Data key="suite">CC</Data>
+    <Data key="FamilyName">Bridge</Data>
+    <Data key="HostNameForCSXS">BRDG</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="bridge-8.064" platform="mac" id="121">
+    <Data key="$bridge">$InstallFolder</Data>
+    <Data key="$ExtensionInstallFolder">$adobecommon/Bridge CC 2018 Extensions</Data>
+    <Data key="ProductName">Bridge64</Data>
+    <Data key="DisplayName">Bridge CC</Data>
+    <Data key="suite">CC</Data>
+    <Data key="FamilyName">Bridge</Data>
+    <Data key="HostNameForCSXS">BRDG</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="dreamweaver-18.0" id="122">
+    <Data key="$sharedextensionfolder">$shareddatafolder/Adobe/Dreamweaver CC 2018/$LOCALE/Configuration/Extensions</Data>
+    <Data key="$dreamweaver">$installfolder</Data>
+    <Data key="$dreamweaver/Configuration">$userdatafolder/Adobe/Dreamweaver CC 2018/$LOCALE/Configuration</Data>
+    <Data key="$UserBinfolder">$userdatafolder/Adobe/Dreamweaver CC 2018/$LOCALE</Data>
+    <Data key="HostNameForCSXS">DRWV</Data>
+    <Data key="Bit">64</Data>
+    <Data key="suite">CC</Data>
+    <Data key="ProductName">Dreamweaver64</Data>
+    <Data key="DisplayName">Adobe Dreamweaver CC</Data>
+    <Data key="FamilyName">Dreamweaver</Data>
+    <Data key="$IconPath">$installfolder/configuration/Icon.png</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="dreamweaver-18.0.32" platform="win" id="123">
+    <Data key="$sharedextensionfolder">$shareddatafolder/Adobe/Dreamweaver CC 2018/$LOCALE/Configuration/Extensions</Data>
+    <Data key="$dreamweaver">$installfolder</Data>
+    <Data key="$dreamweaver/Configuration">$userdatafolder/Adobe/Dreamweaver CC 2018/$LOCALE/Configuration</Data>
+    <Data key="$UserBinfolder">$userdatafolder/Adobe/Dreamweaver CC 2018/$LOCALE</Data>
+    <Data key="HostNameForCSXS">DRWV</Data>
+    <Data key="Bit">32</Data>
+    <Data key="suite">CC</Data>
+    <Data key="ProductName">Dreamweaver32</Data>
+    <Data key="DisplayName">Adobe Dreamweaver CC</Data>
+    <Data key="FamilyName">Dreamweaver</Data>
+    <Data key="$IconPath">$installfolder/configuration/Icon.png</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="dreamweaver-18.0.64" platform="win" id="124">
+    <Data key="$sharedextensionfolder">$shareddatafolder/Adobe/Dreamweaver CC 2018/$LOCALE/Configuration/Extensions</Data>
+    <Data key="$dreamweaver">$installfolder</Data>
+    <Data key="$dreamweaver/Configuration">$userdatafolder/Adobe/Dreamweaver CC 2018/$LOCALE/Configuration</Data>
+    <Data key="$UserBinfolder">$userdatafolder/Adobe/Dreamweaver CC 2018/$LOCALE</Data>
+    <Data key="HostNameForCSXS">DRWV</Data>
+    <Data key="Bit">64</Data>
+    <Data key="suite">CC</Data>
+    <Data key="ProductName">Dreamweaver64</Data>
+    <Data key="DisplayName">Adobe Dreamweaver CC</Data>
+    <Data key="FamilyName">Dreamweaver</Data>
+    <Data key="$IconPath">$installfolder/configuration/Icon.png</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="illustrator-22.032" platform="win" id="125">
+    <Data key="$illustrator">$InstallFolder/../../..</Data>
+    <Data key="$plugin">$InstallFolder/../../../Plug-ins</Data>
+    <Data key="$scripting">$InstallFolder/../../../Scripting</Data>
+    <Data key="$presets">$InstallFolder/../../../Presets</Data>
+    <Data key="$localizedpresets">$presets/$Locale</Data>
+    <Data key="$localizedUserPresets">$UserDataFolder/Adobe/Adobe Illustrator 22 Settings/$LOCALE</Data>
+    <Data key="DisplayName">Illustrator CC 32</Data>
+    <Data key="ProductName">Illustrator32</Data>
+    <Data key="FamilyName">Illustrator</Data>
+    <Data key="suite">CC</Data>
+    <Data key="HostNameForCSXS">ILST</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/ai_app_24px.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">32</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+    <Data key="NonZxpFileType">ai,ase</Data>
+    <Data key="ai-destination">$downloads</Data>
+    <Data key="ase-destination">$downloads</Data>
+</Product>
+<Product name="illustrator-22.064" platform="win" id="126">
+    <Data key="$illustrator">$InstallFolder/../../..</Data>
+    <Data key="$plugin">$InstallFolder/../../../Plug-ins</Data>
+    <Data key="$scripting">$InstallFolder/../../../Scripting</Data>
+    <Data key="$presets">$InstallFolder/../../../Presets</Data>
+    <Data key="$localizedpresets">$presets/$Locale</Data>
+    <Data key="$localizedUserPresets">$UserDataFolder/Adobe/Adobe Illustrator 22 Settings/$LOCALE</Data>
+    <Data key="DisplayName">Illustrator CC</Data>
+    <Data key="ProductName">Illustrator64</Data>
+    <Data key="FamilyName">Illustrator</Data>
+    <Data key="suite">CC</Data>
+    <Data key="HostNameForCSXS">ILST</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/ai_app_24px.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+    <Data key="NonZxpFileType">ai,ase</Data>
+    <Data key="ai-destination">$downloads</Data>
+    <Data key="ase-destination">$downloads</Data>
+</Product>
+<Product name="illustrator-22.064" platform="mac" id="127">
+    <Data key="$illustrator">$InstallFolder</Data>
+    <Data key="$plugin">$InstallFolder/Plug-ins.localized</Data>
+    <Data key="$scripting">$InstallFolder/Scripting.localized</Data>
+    <Data key="$presets">$InstallFolder/Presets.localized</Data>
+    <Data key="$localizedpresets">$presets/$Locale</Data>
+    <Data key="$localizedUserPresets">$UserDataFolder/Adobe/Adobe Illustrator 22 Settings/$LOCALE</Data> 
+    <Data key="DisplayName">Illustrator CC</Data>
+    <Data key="ProductName">Illustrator</Data>
+    <Data key="FamilyName">Illustrator</Data>
+    <Data key="suite">CC</Data>
+    <Data key="HostNameForCSXS">ILST</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/ai_app_24px.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+    <Data key="NonZxpFileType">ai,ase</Data>
+    <Data key="ai-destination">$downloads</Data>
+    <Data key="ase-destination">$downloads</Data>
+</Product>
+<Product name="incopy-13.032" platform="win" id="128">
+    <Data key="$incopy">$InstallFolder</Data>
+    <Data key="$incopy_user">$UserDataFolder/Adobe/Adobe InCopy CC 2018</Data>
+    <Data key="DisplayName">InCopy CC 32</Data>
+    <Data key="ProductName">InCopy</Data>
+    <Data key="FamilyName">InCopy</Data>
+    <Data key="suite">CC</Data>
+    <Data key="HostNameForCSXS">AICY</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/Icon.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">32</Data>
+    <Data key="$PreExtensionFolder" locale="ja_JP">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-J/ja_JP/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="ko_KR">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-J/ko_KR/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_CN">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-J/zh_CN/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_TW">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-J/zh_TW/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_AE">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-ME/en_AE/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_IL">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-ME/en_IL/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="fr_MA">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-ME/fr_MA/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0/$locale/Extensions32
+    </Data>
+    <Data key="$PluginConfigFile" locale="ja_JP">
+        $UserDataFolder/Adobe/InCopy/Version 13.0-J/ja_JP/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="ko_KR">
+        $UserDataFolder/Adobe/InCopy/Version 13.0-J/ko_KR/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_CN">
+        $UserDataFolder/Adobe/InCopy/Version 13.0-J/zh_CN/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_TW">
+        $UserDataFolder/Adobe/InCopy/Version 13.0-J/zh_TW/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_AE">
+        $UserDataFolder/Adobe/InCopy/Version 13.0-ME/en_AE/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_IL">
+        $UserDataFolder/Adobe/InCopy/Version 13.0-ME/en_IL/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_MA">
+        $UserDataFolder/Adobe/InCopy/Version 13.0-ME/fr_FR/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="es_MX">
+        $UserDataFolder/Adobe/InCopy/Version 13.0/es_ES/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_CA">
+        $UserDataFolder/Adobe/InCopy/Version 13.0/fr_FR/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile">
+        $UserDataFolder/Adobe/InCopy/Version 13.0/$locale/PlugInConfig32.txt
+    </Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="incopy-13.064" platform="win" id="129">
+    <Data key="$incopy">$InstallFolder</Data>
+    <Data key="$incopy_user">$UserDataFolder/Adobe/Adobe InCopy CC 2018</Data>
+    <Data key="DisplayName">InCopy CC 64</Data>
+    <Data key="ProductName">InCopy64</Data>
+    <Data key="FamilyName">InCopy</Data>
+    <Data key="suite">CC</Data>
+    <Data key="HostNameForCSXS">AICY</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/Icon.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$PreExtensionFolder" locale="ja_JP">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-J/ja_JP/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="ko_KR">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-J/ko_KR/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_CN">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-J/zh_CN/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_TW">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-J/zh_TW/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_AE">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-ME/en_AE/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_IL">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-ME/en_IL/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="fr_MA">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-ME/fr_MA/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0/$locale/Extensions
+    </Data>
+    <Data key="$PluginConfigFile" locale="ja_JP">
+        $UserDataFolder/Adobe/InCopy/Version 13.0-J/ja_JP/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="ko_KR">
+        $UserDataFolder/Adobe/InCopy/Version 13.0-J/ko_KR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_CN">
+        $UserDataFolder/Adobe/InCopy/Version 13.0-J/zh_CN/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_TW">
+        $UserDataFolder/Adobe/InCopy/Version 13.0-J/zh_TW/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_AE">
+        $UserDataFolder/Adobe/InCopy/Version 13.0-ME/en_AE/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_IL">
+        $UserDataFolder/Adobe/InCopy/Version 13.0-ME/en_IL/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_MA">
+        $UserDataFolder/Adobe/InCopy/Version 13.0-ME/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="es_MX">
+        $UserDataFolder/Adobe/InCopy/Version 13.0/es_ES/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_CA">
+        $UserDataFolder/Adobe/InCopy/Version 13.0/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile">
+        $UserDataFolder/Adobe/InCopy/Version 13.0/$locale/PlugInConfig.txt
+    </Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="incopy-13.064" platform="mac" id="130">
+    <Data key="$incopy">$InstallFolder</Data>
+    <Data key="$incopy_user">$UserDataFolder/Adobe/Adobe InCopy CC 2018</Data>
+    <Data key="DisplayName">InCopy CC</Data>
+    <Data key="ProductName">InCopy</Data>
+    <Data key="FamilyName">InCopy</Data>
+    <Data key="suite">CC</Data>
+    <Data key="HostNameForCSXS">AICY</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/Icon.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$PreExtensionFolder" locale="ja_JP">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-J/ja_JP/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="ko_KR">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-J/ko_KR/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_CN">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-J/zh_CN/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_TW">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-J/zh_TW/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_AE">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-ME/en_AE/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_IL">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-ME/en_IL/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="fr_MA">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0-ME/fr_MA/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder">
+        $SharedCommonDataFolder/Adobe/InCopy/Version 13.0/$locale/Extensions
+    </Data>
+    <Data key="$PluginConfigFile" locale="ja_JP">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 13.0-J/ja_JP/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="ko_KR">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 13.0-J/ko_KR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_CN">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 13.0-J/zh_CN/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_TW">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 13.0-J/zh_TW/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_AE">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 13.0-ME/en_AE/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_IL">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 13.0-ME/en_IL/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_MA">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 13.0-ME/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="es_MX">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 13.0/es_ES/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_CA">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 13.0/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile">
+        $UserLibraryFolder/Preferences/Adobe InCopy/Version 13.0/$locale/PlugInConfig.txt
+    </Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="indesign-13.032" platform="win" id="131">
+    <Data key="$indesign">$InstallFolder</Data>
+    <Data key="$indesign_user">$UserDataFolder/Adobe/Adobe InDesign CC 2018</Data>
+    <Data key="DisplayName">InDesign CC 32</Data>
+    <Data key="ProductName">InDesign</Data>
+    <Data key="FamilyName">InDesign</Data>
+    <Data key="suite">CC</Data>
+    <Data key="HostNameForCSXS">IDSN</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/Icon.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">32</Data>
+    <Data key="$PreExtensionFolder" locale="ja_JP">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-J/ja_JP/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="ko_KR">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-J/ko_KR/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_CN">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-J/zh_CN/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_TW">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-J/zh_TW/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_AE">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-ME/en_AE/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_IL">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-ME/en_IL/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder" locale="fr_MA">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-ME/fr_MA/Extensions32
+    </Data>
+    <Data key="$PreExtensionFolder">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0/$locale/Extensions32
+    </Data>
+    <Data key="$PluginConfigFile" locale="ja_JP">
+        $UserDataFolder/Adobe/InDesign/Version 13.0-J/ja_JP/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="ko_KR">
+        $UserDataFolder/Adobe/InDesign/Version 13.0-J/ko_KR/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_CN">
+    $UserDataFolder/Adobe/InDesign/Version 13.0-J/zh_CN/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_TW">
+        $UserDataFolder/Adobe/InDesign/Version 13.0-J/zh_TW/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_AE">
+        $UserDataFolder/Adobe/InDesign/Version 13.0-ME/en_AE/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_IL">
+        $UserDataFolder/Adobe/InDesign/Version 13.0-ME/en_IL/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_MA">
+        $UserDataFolder/Adobe/InDesign/Version 13.0-ME/fr_FR/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="es_MX">
+        $UserDataFolder/Adobe/InDesign/Version 13.0/es_ES/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_CA">
+        $UserDataFolder/Adobe/InDesign/Version 13.0/fr_FR/PlugInConfig32.txt
+    </Data>
+    <Data key="$PluginConfigFile">
+        $UserDataFolder/Adobe/InDesign/Version 13.0/$locale/PlugInConfig32.txt
+    </Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="indesign-13.064" platform="win" id="132">
+    <Data key="$indesign">$InstallFolder</Data>
+    <Data key="$indesign_user">$UserDataFolder/Adobe/Adobe InDesign CC 2018</Data>
+    <Data key="DisplayName">InDesign CC 64</Data>
+    <Data key="ProductName">InDesign64</Data>
+    <Data key="FamilyName">InDesign</Data>
+    <Data key="suite">CC</Data>
+    <Data key="HostNameForCSXS">IDSN</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/Icon.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$PreExtensionFolder" locale="ja_JP">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-J/ja_JP/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="ko_KR">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-J/ko_KR/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_CN">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-J/zh_CN/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_TW">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-J/zh_TW/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_AE">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-ME/en_AE/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_IL">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-ME/en_IL/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="fr_MA">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-ME/fr_MA/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0/$locale/Extensions
+    </Data>
+    <Data key="$PluginConfigFile" locale="ja_JP">
+        $UserDataFolder/Adobe/InDesign/Version 13.0-J/ja_JP/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="ko_KR">
+        $UserDataFolder/Adobe/InDesign/Version 13.0-J/ko_KR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_CN">
+        $UserDataFolder/Adobe/InDesign/Version 13.0-J/zh_CN/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_TW">
+        $UserDataFolder/Adobe/InDesign/Version 13.0-J/zh_TW/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_AE">
+        $UserDataFolder/Adobe/InDesign/Version 13.0-ME/en_AE/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_IL">
+        $UserDataFolder/Adobe/InDesign/Version 13.0-ME/en_IL/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_MA">
+        $UserDataFolder/Adobe/InDesign/Version 13.0-ME/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="es_MX">
+        $UserDataFolder/Adobe/InDesign/Version 13.0/es_ES/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_CA">
+        $UserDataFolder/Adobe/InDesign/Version 13.0/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile">
+        $UserDataFolder/Adobe/InDesign/Version 13.0/$locale/PlugInConfig.txt
+    </Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="indesign-13.064" platform="mac" id="133">
+    <Data key="$indesign">$InstallFolder</Data>
+    <Data key="$indesign_user">$UserDataFolder/Adobe/Adobe InDesign CC 2018</Data>
+    <Data key="DisplayName">InDesign CC</Data>
+    <Data key="ProductName">InDesign</Data>
+    <Data key="FamilyName">InDesign</Data>
+    <Data key="suite">CC</Data>
+    <Data key="HostNameForCSXS">IDSN</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/Icon.png</Data>
+    <Data key="DefaultLocale">en_US</Data>
+    <Data key="Bit">64</Data>
+    <Data key="$PreExtensionFolder" locale="ja_JP">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-J/ja_JP/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="ko_KR">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-J/ko_KR/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_CN">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-J/zh_CN/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="zh_TW">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-J/zh_TW/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_AE">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-ME/en_AE/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="en_IL">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-ME/en_IL/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder" locale="fr_MA">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0-ME/fr_MA/Extensions
+    </Data>
+    <Data key="$PreExtensionFolder">
+        $SharedCommonDataFolder/Adobe/InDesign/Version 13.0/$locale/Extensions
+    </Data>
+    <Data key="$PluginConfigFile" locale="ja_JP">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 13.0-J/ja_JP/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="ko_KR">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 13.0-J/ko_KR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_CN">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 13.0-J/zh_CN/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="zh_TW">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 13.0-J/zh_TW/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_AE">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 13.0-ME/en_AE/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="en_IL">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 13.0-ME/en_IL/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_MA">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 13.0-ME/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="es_MX">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 13.0/es_ES/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile" locale="fr_CA">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 13.0/fr_FR/PlugInConfig.txt
+    </Data>
+    <Data key="$PluginConfigFile">
+        $UserLibraryFolder/Preferences/Adobe InDesign/Version 13.0/$locale/PlugInConfig.txt
+    </Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="prelude-7.0" id="134">
+    <Data key="ProductName">Prelude</Data>
+    <Data key="DisplayName">Prelude CC</Data>
+    <Data key="$prelude">$InstallFolder</Data>
+    <Data key="suite">CC</Data>
+    <Data key="HostNameForCSXS">PRLD</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/pl_app_24.png</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="premierepro-12.0" id="135">
+    <Data key="$premierepro">$InstallFolder</Data>
+    <Data key="ProductName">Premiere</Data>
+    <Data key="DisplayName">Premiere Pro CC</Data>
+    <Data key="suite">CC</Data>
+    <Data key="HostNameForCSXS">PPRO</Data>
+    <Data key="$IconPath">$InstallFolder/Configuration/pr_icon_24.png</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+</Product>
+<Product name="photoshop-120.032" platform="win" id="136">
+    <Data key="$photoshopappfolder">$installfolder</Data>
+    <Data key="$pluginsfolder">$photoshopappfolder/Plug-Ins</Data>
+    <Data key="$presetsfolder">$photoshopappfolder/Presets</Data>
+    <Data key="$platform">Win</Data>
+    <Data key="$actions">$presetsfolder/Actions</Data>
+    <Data key="$blackandwhite">$presetsfolder/Black and White</Data>
+    <Data key="$brushes">$presetsfolder/Brushes</Data>
+    <Data key="$channelmixer">$presetsfolder/Channel Mixer</Data>
+    <Data key="$colorbooks">$presetsfolder/Color Books</Data>
+    <Data key="$colorrange">$presetsfolder/Color Range</Data>
+    <Data key="$colorswatches">$presetsfolder/Color Swatches</Data>
+    <Data key="$contours">$presetsfolder/Contours</Data>
+    <Data key="$curves">$presetsfolder/Curves</Data>
+    <Data key="$customshapes">$presetsfolder/Custom Shapes</Data>
+    <Data key="$duotones">$presetsfolder/Duotones</Data>
+    <Data key="$exposure">$presetsfolder/Exposure</Data>
+    <Data key="$gradients">$presetsfolder/Gradients</Data>
+    <Data key="$huesat">$presetsfolder/Hue Sat</Data>
+    <Data key="$imagestatistics">$presetsfolder/Image Statistics</Data>
+    <Data key="$keyboardshortcuts">$presetsfolder/Keyboard Shortcuts</Data>
+    <Data key="$layouts">$presetsfolder/Layouts</Data>
+    <Data key="$lenscorrection">$presetsfolder/Lens Correction</Data>
+    <Data key="$levels">$presetsfolder/Levels</Data>
+    <Data key="$liquifymeshes">$presetsfolder/Liquify Meshes</Data>
+    <Data key="$menucustomization">$presetsfolder/Menu Customization</Data>
+    <Data key="$optimizedcolors">$presetsfolder/Optimized Colors</Data>
+    <Data key="$optimizedoutputSettings">$presetsfolder/Optimized Output Settings</Data>
+    <Data key="$optimizedsettings">$presetsfolder/Optimized Settings</Data>
+    <Data key="$patterns">$presetsfolder/Patterns</Data>
+    <Data key="$reducenoise">$presetsfolder/Reduce Noise</Data>
+    <Data key="$replacecolor">$presetsfolder/Replace Color</Data>
+    <Data key="$scripts">$presetsfolder/Scripts</Data>
+    <Data key="$selectivecolor">$presetsfolder/Selective Color</Data>
+    <Data key="$shadowhighlight">$presetsfolder/Shadow Highlight</Data>
+    <Data key="$smartsharpen">$presetsfolder/Smart Sharpen</Data>
+    <Data key="$styles">$presetsfolder/Styles</Data>
+    <Data key="$textures">$presetsfolder/Textures</Data>
+    <Data key="$tools">$presetsfolder/Tools</Data>
+    <Data key="$variations">$presetsfolder/Variations</Data>
+    <Data key="$webphotogallery">$presetsfolder/Web Photo Gallery</Data>
+    <Data key="$workspaces">$presetsfolder/Workspaces</Data>
+    <Data key="$zoomify">$presetsfolder/Zoomify</Data>
+    <Data key="$hueandsaturation">$presetsfolder/Hue and Saturation</Data>
+    <Data key="$lights">$presetsfolder/Lights</Data>
+    <Data key="$materials">$presetsfolder/Materials</Data>
+    <Data key="$meshes">$presetsfolder/Meshes</Data>
+    <Data key="$rendersettings">$presetsfolder/Render Settings</Data>
+    <Data key="$volumes">$presetsfolder/Volumes</Data>
+    <Data key="$widgets">$presetsfolder/Widgets</Data>
+    <Data key="$localesfolder">$photoshopappfolder/Locales</Data>
+    <Data key="$additionalplugins">$localesfolder/$LOCALE/Additional Plug-ins</Data>
+    <Data key="$additionalpresets">$localesfolder/$LOCALE/Additional Presets</Data>
+    <Data key="$localeskeyboardshortcuts">$localesfolder/$LOCALE/Additional Presets/$platform/Keyboard Shortcuts</Data>
+    <Data key="$localesmenucustomization">$localesfolder/$LOCALE/Additional Presets/$platform/Menu Customization</Data>
+    <Data key="$localesworkspaces">$localesfolder/$LOCALE/Additional Presets/$platform/Workspaces</Data>
+    <Data key="$automate">$pluginsfolder/Automate</Data>
+    <Data key="$digimarc">$pluginsfolder/Digimarc</Data>
+    <Data key="$displacementmaps">$pluginsfolder/Displacement Maps</Data>
+    <Data key="$effects">$pluginsfolder/Effects</Data>
+    <Data key="$extensions">$pluginsfolder/Extensions</Data>
+    <Data key="$fileformats">$pluginsfolder/File Formats</Data>
+    <Data key="$filters">$pluginsfolder/Filters</Data>
+    <Data key="$imagestacks">$pluginsfolder/Image Stacks</Data>
+    <Data key="$importexport">$pluginsfolder/Import-Export</Data>
+    <Data key="$measurements">$pluginsfolder/Measurements</Data>
+    <Data key="$panels">$pluginsfolder/Panels</Data>
+    <Data key="$parser">$pluginsfolder/Parser</Data>
+    <Data key="$3dengines">$pluginsfolder/3D Engines</Data>
+    <Data key="$lightingstyles">$pluginsfolder/Filters/Lighting Styles</Data>
+    <Data key="$matlab">$photoshopappfolder/MATLAB</Data>
+    <Data key="$photoshop">$UserDataFolder/Adobe/Adobe Photoshop CC 2018/Configuration</Data>
+    <Data key="DisplayName">Photoshop CC 32</Data>
+    <Data key="ProductName">Photoshop32</Data>
+    <Data key="FamilyName">Photoshop</Data>
+    <Data key="suite">CC</Data>
+    <Data key="$IconPath">$installfolder/Configuration/PS_exman_24px.png</Data>
+    <Data key="HostNameForCSXS">PHSP</Data>
+    <Data key="Bit">32</Data>
+    <Data key="$extraToken">$photoshopappfolder</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+    <Data key="NonZxpFileType">abr,atn,pat,aco</Data>
+    <Data key="abr-destination">$downloads</Data>
+    <Data key="atn-destination">$downloads</Data>
+    <Data key="pat-destination">$downloads</Data>
+    <Data key="aco-destination">$downloads</Data>
+</Product>
+<Product name="photoshop-120.064" platform="win" id="137">
+    <Data key="$photoshopappfolder">$installfolder</Data>
+    <Data key="$pluginsfolder">$photoshopappfolder/Plug-Ins</Data>
+    <Data key="$presetsfolder">$photoshopappfolder/Presets</Data>
+    <Data key="$platform">Win</Data>
+    <Data key="$actions">$presetsfolder/Actions</Data>
+    <Data key="$blackandwhite">$presetsfolder/Black and White</Data>
+    <Data key="$brushes">$presetsfolder/Brushes</Data>
+    <Data key="$channelmixer">$presetsfolder/Channel Mixer</Data>
+    <Data key="$colorbooks">$presetsfolder/Color Books</Data>
+    <Data key="$colorrange">$presetsfolder/Color Range</Data>
+    <Data key="$colorswatches">$presetsfolder/Color Swatches</Data>
+    <Data key="$contours">$presetsfolder/Contours</Data>
+    <Data key="$curves">$presetsfolder/Curves</Data>
+    <Data key="$customshapes">$presetsfolder/Custom Shapes</Data>
+    <Data key="$duotones">$presetsfolder/Duotones</Data>
+    <Data key="$exposure">$presetsfolder/Exposure</Data>
+    <Data key="$gradients">$presetsfolder/Gradients</Data>
+    <Data key="$huesat">$presetsfolder/Hue Sat</Data>
+    <Data key="$imagestatistics">$presetsfolder/Image Statistics</Data>
+    <Data key="$keyboardshortcuts">$presetsfolder/Keyboard Shortcuts</Data>
+    <Data key="$layouts">$presetsfolder/Layouts</Data>
+    <Data key="$lenscorrection">$presetsfolder/Lens Correction</Data>
+    <Data key="$levels">$presetsfolder/Levels</Data>
+    <Data key="$liquifymeshes">$presetsfolder/Liquify Meshes</Data>
+    <Data key="$menucustomization">$presetsfolder/Menu Customization</Data>
+    <Data key="$optimizedcolors">$presetsfolder/Optimized Colors</Data>
+    <Data key="$optimizedoutputSettings">$presetsfolder/Optimized Output Settings</Data>
+    <Data key="$optimizedsettings">$presetsfolder/Optimized Settings</Data>
+    <Data key="$patterns">$presetsfolder/Patterns</Data>
+    <Data key="$reducenoise">$presetsfolder/Reduce Noise</Data>
+    <Data key="$replacecolor">$presetsfolder/Replace Color</Data>
+    <Data key="$scripts">$presetsfolder/Scripts</Data>
+    <Data key="$selectivecolor">$presetsfolder/Selective Color</Data>
+    <Data key="$shadowhighlight">$presetsfolder/Shadow Highlight</Data>
+    <Data key="$smartsharpen">$presetsfolder/Smart Sharpen</Data>
+    <Data key="$styles">$presetsfolder/Styles</Data>
+    <Data key="$textures">$presetsfolder/Textures</Data>
+    <Data key="$tools">$presetsfolder/Tools</Data>
+    <Data key="$variations">$presetsfolder/Variations</Data>
+    <Data key="$webphotogallery">$presetsfolder/Web Photo Gallery</Data>
+    <Data key="$workspaces">$presetsfolder/Workspaces</Data>
+    <Data key="$zoomify">$presetsfolder/Zoomify</Data>
+    <Data key="$hueandsaturation">$presetsfolder/Hue and Saturation</Data>
+    <Data key="$lights">$presetsfolder/Lights</Data>
+    <Data key="$materials">$presetsfolder/Materials</Data>
+    <Data key="$meshes">$presetsfolder/Meshes</Data>
+    <Data key="$rendersettings">$presetsfolder/Render Settings</Data>
+    <Data key="$volumes">$presetsfolder/Volumes</Data>
+    <Data key="$widgets">$presetsfolder/Widgets</Data>
+    <Data key="$localesfolder">$photoshopappfolder/Locales</Data>
+    <Data key="$additionalplugins">$localesfolder/$LOCALE/Additional Plug-ins</Data>
+    <Data key="$additionalpresets">$localesfolder/$LOCALE/Additional Presets</Data>
+    <Data key="$localeskeyboardshortcuts">$localesfolder/$LOCALE/Additional Presets/$platform/Keyboard Shortcuts</Data>
+    <Data key="$localesmenucustomization">$localesfolder/$LOCALE/Additional Presets/$platform/Menu Customization</Data>
+    <Data key="$localesworkspaces">$localesfolder/$LOCALE/Additional Presets/$platform/Workspaces</Data>
+    <Data key="$automate">$pluginsfolder/Automate</Data>
+    <Data key="$digimarc">$pluginsfolder/Digimarc</Data>
+    <Data key="$displacementmaps">$pluginsfolder/Displacement Maps</Data>
+    <Data key="$effects">$pluginsfolder/Effects</Data>
+    <Data key="$extensions">$pluginsfolder/Extensions</Data>
+    <Data key="$fileformats">$pluginsfolder/File Formats</Data>
+    <Data key="$filters">$pluginsfolder/Filters</Data>
+    <Data key="$imagestacks">$pluginsfolder/Image Stacks</Data>
+    <Data key="$importexport">$pluginsfolder/Import-Export</Data>
+    <Data key="$measurements">$pluginsfolder/Measurements</Data>
+    <Data key="$panels">$pluginsfolder/Panels</Data>
+    <Data key="$parser">$pluginsfolder/Parser</Data>
+    <Data key="$3dengines">$pluginsfolder/3D Engines</Data>
+    <Data key="$lightingstyles">$pluginsfolder/Filters/Lighting Styles</Data>
+    <Data key="$matlab">$photoshopappfolder/MATLAB</Data>
+    <Data key="$photoshop">$UserDataFolder/Adobe/Adobe Photoshop CC 2018/Configuration</Data>
+    <Data key="DisplayName">Photoshop CC 64</Data>
+    <Data key="ProductName">Photoshop64</Data>
+    <Data key="FamilyName">Photoshop</Data>
+    <Data key="suite">CC</Data>
+    <Data key="$IconPath">$installfolder/Configuration/PS_exman_24px.png</Data>
+    <Data key="HostNameForCSXS">PHSP</Data>
+    <Data key="Bit">64</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+    <Data key="NonZxpFileType">abr,atn,pat,aco</Data>
+    <Data key="abr-destination">$downloads</Data>
+    <Data key="atn-destination">$downloads</Data>
+    <Data key="pat-destination">$downloads</Data>
+    <Data key="aco-destination">$downloads</Data>
+</Product>
+<Product name="photoshop-120.032" platform="mac" id="138">
+    <Data key="$photoshopappfolder">$installfolder</Data>
+    <Data key="$pluginsfolder">$photoshopappfolder/Plug-Ins</Data>
+    <Data key="$presetsfolder">$photoshopappfolder/Presets</Data>
+    <Data key="$platform">Mac</Data>
+    <Data key="$actions">$presetsfolder/Actions</Data>
+    <Data key="$blackandwhite">$presetsfolder/Black and White</Data>
+    <Data key="$brushes">$presetsfolder/Brushes</Data>
+    <Data key="$channelmixer">$presetsfolder/Channel Mixer</Data>
+    <Data key="$colorbooks">$presetsfolder/Color Books</Data>
+    <Data key="$colorrange">$presetsfolder/Color Range</Data>
+    <Data key="$colorswatches">$presetsfolder/Color Swatches</Data>
+    <Data key="$contours">$presetsfolder/Contours</Data>
+    <Data key="$curves">$presetsfolder/Curves</Data>
+    <Data key="$customshapes">$presetsfolder/Custom Shapes</Data>
+    <Data key="$duotones">$presetsfolder/Duotones</Data>
+    <Data key="$exposure">$presetsfolder/Exposure</Data>
+    <Data key="$gradients">$presetsfolder/Gradients</Data>
+    <Data key="$huesat">$presetsfolder/Hue Sat</Data>
+    <Data key="$imagestatistics">$presetsfolder/Image Statistics</Data>
+    <Data key="$keyboardshortcuts">$presetsfolder/Keyboard Shortcuts</Data>
+    <Data key="$layouts">$presetsfolder/Layouts</Data>
+    <Data key="$lenscorrection">$presetsfolder/Lens Correction</Data>
+    <Data key="$levels">$presetsfolder/Levels</Data>
+    <Data key="$liquifymeshes">$presetsfolder/Liquify Meshes</Data>
+    <Data key="$menucustomization">$presetsfolder/Menu Customization</Data>
+    <Data key="$optimizedcolors">$presetsfolder/Optimized Colors</Data>
+    <Data key="$optimizedoutputSettings">$presetsfolder/Optimized Output Settings</Data>
+    <Data key="$optimizedsettings">$presetsfolder/Optimized Settings</Data>
+    <Data key="$patterns">$presetsfolder/Patterns</Data>
+    <Data key="$reducenoise">$presetsfolder/Reduce Noise</Data>
+    <Data key="$replacecolor">$presetsfolder/Replace Color</Data>
+    <Data key="$scripts">$presetsfolder/Scripts</Data>
+    <Data key="$selectivecolor">$presetsfolder/Selective Color</Data>
+    <Data key="$shadowhighlight">$presetsfolder/Shadow Highlight</Data>
+    <Data key="$smartsharpen">$presetsfolder/Smart Sharpen</Data>
+    <Data key="$styles">$presetsfolder/Styles</Data>
+    <Data key="$textures">$presetsfolder/Textures</Data>
+    <Data key="$tools">$presetsfolder/Tools</Data>
+    <Data key="$variations">$presetsfolder/Variations</Data>
+    <Data key="$webphotogallery">$presetsfolder/Web Photo Gallery</Data>
+    <Data key="$workspaces">$presetsfolder/Workspaces</Data>
+    <Data key="$zoomify">$presetsfolder/Zoomify</Data>
+    <Data key="$hueandsaturation">$presetsfolder/Hue and Saturation</Data>
+    <Data key="$lights">$presetsfolder/Lights</Data>
+    <Data key="$materials">$presetsfolder/Materials</Data>
+    <Data key="$meshes">$presetsfolder/Meshes</Data>
+    <Data key="$rendersettings">$presetsfolder/Render Settings</Data>
+    <Data key="$volumes">$presetsfolder/Volumes</Data>
+    <Data key="$widgets">$presetsfolder/Widgets</Data>
+    <Data key="$localesfolder">$photoshopappfolder/Locales</Data>
+    <Data key="$additionalplugins">$localesfolder/$LOCALE/Additional Plug-ins</Data>
+    <Data key="$additionalpresets">$localesfolder/$LOCALE/Additional Presets</Data>
+    <Data key="$localeskeyboardshortcuts">$localesfolder/$LOCALE/Additional Presets/$platform/Keyboard Shortcuts</Data>
+    <Data key="$localesmenucustomization">$localesfolder/$LOCALE/Additional Presets/$platform/Menu Customization</Data>
+    <Data key="$localesworkspaces">$localesfolder/$LOCALE/Additional Presets/$platform/Workspaces</Data>
+    <Data key="$automate">$pluginsfolder/Automate</Data>
+    <Data key="$digimarc">$pluginsfolder/Digimarc</Data>
+    <Data key="$displacementmaps">$pluginsfolder/Displacement Maps</Data>
+    <Data key="$effects">$pluginsfolder/Effects</Data>
+    <Data key="$extensions">$pluginsfolder/Extensions</Data>
+    <Data key="$fileformats">$pluginsfolder/File Formats</Data>
+    <Data key="$filters">$pluginsfolder/Filters</Data>
+    <Data key="$imagestacks">$pluginsfolder/Image Stacks</Data>
+    <Data key="$importexport">$pluginsfolder/Import-Export</Data>
+    <Data key="$measurements">$pluginsfolder/Measurements</Data>
+    <Data key="$panels">$pluginsfolder/Panels</Data>
+    <Data key="$parser">$pluginsfolder/Parser</Data>
+    <Data key="$3dengines">$pluginsfolder/3D Engines</Data>
+    <Data key="$lightingstyles">$pluginsfolder/Filters/Lighting Styles</Data>
+    <Data key="$matlab">$photoshopappfolder/MATLAB</Data>
+    <Data key="$photoshop">$UserDataFolder/Adobe/Adobe Photoshop CC 2018/Configuration</Data>
+    <Data key="DisplayName">Photoshop CC</Data>
+    <Data key="ProductName">Photoshop</Data>
+    <Data key="FamilyName">Photoshop</Data>
+    <Data key="suite">CC</Data>
+    <Data key="$IconPath">$installfolder/Configuration/PS_exman_24px.png</Data>
+    <Data key="HostNameForCSXS">PHSP</Data>
+    <Data key="MinExManVersion">7.3.4</Data>
+    <Data key="NonZxpFileType">abr,atn,pat,aco</Data>
+    <Data key="abr-destination">$downloads</Data>
+    <Data key="atn-destination">$downloads</Data>
+    <Data key="pat-destination">$downloads</Data>
+    <Data key="aco-destination">$downloads</Data>
 </Product>
 </Configuration>
 <!-- Extension Manager -->
