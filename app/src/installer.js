@@ -36,7 +36,7 @@ global.installer = function() {
           console.log('stdout: ' + data.toString());
           var logbits = /-(\d+)/.exec(data.toString());
           var code = logbits && logbits[1] ? parseInt(logbits[1]) : null;
-          reject(errors.get(code) || 'Error: ' + data.toString());
+          if (code) reject(errors.get(code) || 'Error: ' + data.toString());
         });
 
         spawn.stderr.on('data', function(data) {
