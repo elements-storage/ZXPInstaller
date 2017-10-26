@@ -27,6 +27,8 @@ global.installer = function() {
       console.log('starting to install ZXP from path ' + zxpPath);
 
       return (promise = new Promise(function(resolve, reject) {
+        var closeMessage = '';
+
         var spawn = install_process.spawn(path.join(__dirname, target_path()), [
           CMD_PREFIX + 'install',
           zxpPath
@@ -34,9 +36,10 @@ global.installer = function() {
 
         spawn.stdout.on('data', function(data) {
           console.log('stdout: ' + data.toString());
-          var logbits = /-(\d+)/.exec(data.toString());
+          var logbits = /= -(\d+)/.exec(data.toString());
           var code = logbits && logbits[1] ? parseInt(logbits[1]) : null;
-          if (code) reject(errors.get(code) || 'Error: ' + data.toString());
+          if (code)
+            closeMessage = errors.get(code) || 'Error: ' + data.toString();
         });
 
         spawn.stderr.on('data', function(data) {
@@ -57,6 +60,8 @@ global.installer = function() {
         spawn.on('exit', function(code) {
           if (code == 0) {
             resolve();
+          } else {
+            reject(closeMessage);
           }
         });
       }));
