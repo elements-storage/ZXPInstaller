@@ -25,6 +25,12 @@ global.View = function() {
       .html(message);
   };
 
+  var updateVersion = function(message) {
+    $(body)
+      .find('.version')
+      .html(message);
+  };
+
   var toggleSpinner = function(state) {
     resetClasses();
     $(body).toggleClass('is-showing-spinner', state);
@@ -68,6 +74,8 @@ global.View = function() {
   // PUBLIC
 
   this.init = function() {
+    updateVersion(remote.getGlobal('version'));
+
     document.ondragover = function() {
       resetClasses();
       $(body).addClass('is-dragging');

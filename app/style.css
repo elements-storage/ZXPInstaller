@@ -156,3 +156,17 @@ body {
   animation-delay: .6s;
   -webkit-animation-delay: .6s;
 }
+
+.version {
+  color: #5c1820;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: default;
+  font-size: 12px;
+}
+
+.version:hover {
+  color: #fff;
+}
