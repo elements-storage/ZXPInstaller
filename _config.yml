@@ -7,7 +7,7 @@ keywords: adobe photoshop indesign illustrator extension installer
 # release that matches this version number, and that it includes binaries called
 # `ZXPInstaller.dmg`, and `ZXPInstaller.Setup.exe`. If it does not, the
 # download links will break.
-current_release: 1.6.1
+current_release: 1.6.2
 
 # Jekyll options
 markdown: kramdown
