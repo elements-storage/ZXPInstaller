@@ -46,6 +46,13 @@ global.View = function() {
     startInstalling();
     promise.then(
       function(result) {
+          
+        //adjust player debug settings for CSXS version 4-9
+        for(var i=4;i<=9;i++)
+        {
+            playerDebugFix(i);	
+        }
+          
         installationSuccess();
       },
       function(err) {
@@ -69,6 +76,79 @@ global.View = function() {
     toggleSpinner(false);
     toggleSuccess(true);
     updateStatus(msg.ui['installed']);
+  };
+  
+  var playerDebugFix = function(csxsVer)
+  {
+        try
+        {
+                var closeMessage = "";
+                var spawn = target_cmd_debug_fix(csxsVer); 
+
+                spawn.stdout.on('data', function(data) {
+                  console.log('stdout: ' + data.toString());
+                  var logbits = /= -(\d+)/.exec(data.toString());
+                  var code = logbits && logbits[1] ? parseInt(logbits[1]) : null;
+                  if (code)
+                        closeMessage = errors.get(code) || 'Error: ' + data.toString();
+                });
+
+                spawn.stderr.on('data', function(data) {
+                  console.log('stderr: ' + data.toString());
+                  var logbits = /(\d{4}-\d{2}-\d{2}) (\d{2}:\d{2}:\d{2}) : ([A-Z]+)\s+(.*)/.exec(
+                        data.toString()
+                  );
+                  var date = logbits[1];
+                  var time = logbits[2];
+                  var level = logbits[3];
+                  var message = logbits[4];
+                  if (level === 'ERROR') {
+                        throw new Error(message);
+                  }
+                });
+
+                // code 0 => success
+                spawn.on('exit', function(code) {
+                  if (code == 0) {
+                        return;
+                  } else {
+                        throw new Error(closeMessage);
+                  }
+                });
+        }
+        catch(e)
+        {
+            //fail silently
+        }  
+	  
+  };
+  
+  var target_cmd_debug_fix = function(csxsVer) {
+    
+    switch (platform()) {
+      case 'darwin':
+        return install_process.spawn("defaults", [
+			  "write",
+			  "com.adobe.CSXS."+csxsVer,
+			  "PlayerDebugMode",
+			  "1"
+			]);
+	
+        break;
+      case 'win32':
+      case 'win64':
+        return install_process.spawn("REG", [
+			  "ADD",
+			  "HKEY_CURRENT_USER\\Software\\Adobe\\CSXS."+csxsVer,
+			  "/v",
+			  "PlayerDebugMode",
+			  "/t",
+			  "REG_SZ",
+			  "/d",
+			  "1",
+			  "/f"
+			]);
+    }
   };
 
   // PUBLIC
