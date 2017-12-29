@@ -1,5 +1,3 @@
-**ZXPInstaller works with CC 2018. Developers: Be sure you update your manifest.xml maxVersion file to allow for CC 2018, or remove it entirely. End users: Check with your extension developer to see if they have an updated version.**
-
 # ZXPInstaller
 
 ZXPInstaller is a simple cross platform (OS X and Windows) installer for third party Adobe extensions (`.zxp` files). It serves as a replacement for the Extension Manager which no longer is not supported after CC 2014. It provides a drag-and-drop GUI for installation, and [a website](http://zxpinstaller.com/) to which extension developers can point users to download the installer.
