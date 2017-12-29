@@ -1,5 +1,6 @@
 global.Messages = function() {
 
+  // Error messages are a best guess interpretation of the messages provided here: http://www.adobeexchange.com/resources/19#errors
   var errorMessages = [
     {
       codes: [0],
