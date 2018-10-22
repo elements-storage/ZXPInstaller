@@ -4,7 +4,7 @@
 
 1. Be sure you’ve merged your changes into `master`.
 
-1. If you haven’t already, the version number in `[app/package.json](../app/package.json)` and commit your change.
+1. If you haven’t already, the version number in [`app/package.json`](../app/package.json) and commit your change.
 
 1. Tag the release in `master`.
 
