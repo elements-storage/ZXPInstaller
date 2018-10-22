@@ -26,13 +26,24 @@
 			<data>
 			BEu2VgI9OLiy3p7dvI3r6myw6QU=
 			</data>
+			<key>hash2</key>
+			<data>
+			SAWZQacBUAyvxhGVxe0YxsSp5Eh0DecsxkaqmTZ624Q=
+			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Resources/Info.plist</key>
-		<data>
-		8Dviit0wMWDftlkn3If+fwJ4Erg=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			8Dviit0wMWDftlkn3If+fwJ4Erg=
+			</data>
+			<key>hash2</key>
+			<data>
+			1BIb97fTHWaCBgbw2kXYIGG0jKt7Jk1BfbWLXt60URo=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
