@@ -38,3 +38,7 @@ ZXPInstaller uses Electron (http://electron.atom.io) to create a cross platform 
 # Help needed
 
 Windows is supported, however a maintainer is still needed for the Windows portion of the code.
+
+# Credits
+
+ZXPInstaller was originally created by @maxoos.
