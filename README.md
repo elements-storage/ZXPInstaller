@@ -41,4 +41,4 @@ Windows is supported, however a maintainer is still needed for the Windows porti
 
 # Credits
 
-ZXPInstaller was originally created by @maxoos.
+ZXPInstaller was originally created by [**@maxoos**](https://github.com/maxoos).
