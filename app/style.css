@@ -7,20 +7,23 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
   transition: background-color 1s;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  user-select: none;
+  overflow: hidden;
+  -webkit-app-region: drag;
 }
 
 .main-view {
+  flex: none;
   background-color: #471319;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   border-radius: 5px;
   border: 1px solid #751f29;
-  position: absolute;
-  margin: 100px;
+  margin: auto 100px;
   padding: 25px;
   transition: border-color .5s;
+  cursor: pointer;
 }
 
 .holder {
@@ -30,6 +33,15 @@ body {
 .icon {
   width: 74px;
   margin: 0 auto 15px;
+  transition: 0.125s ease-out transform;
+}
+
+.main-view:hover .icon {
+  transform: translateY(-5px);
+}
+
+.main-view:hover g > g {
+  opacity: .5;
 }
 
 .status {
@@ -49,19 +61,6 @@ body {
   0%, 100% { transform: translate(0px, 0px); }
   50% { transform: translate(0px, 7px); }
 }
-
-@-webkit-keyframes spinner {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  30% { opacity: 1; }
-  100% { opacity: 0; }
-}
-
-@-webkit-keyframes arrow {
-  0%, 100% { transform: translate(0px, 0px); }
-  50% { transform: translate(0px, 7px); }
-}
-
 
 .white,
 .red,
@@ -93,10 +92,6 @@ body {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  -webkit-animation-name: arrow;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
 }
 
 .has-error .red {
@@ -142,31 +137,48 @@ body {
   animation-name: spinner;
   animation-duration: .9s;
   animation-iteration-count: infinite;
-  -webkit-animation-name: spinner;
-  -webkit-animation-duration: .9s;
-  -webkit-animation-iteration-count: infinite;
 }
 
 .is-showing-spinner .green .two {
   animation-delay: .3s;
-  -webkit-animation-delay: .3s;
 }
 
 .is-showing-spinner .green .three {
   animation-delay: .6s;
-  -webkit-animation-delay: .6s;
 }
 
-.version {
-  color: #5c1820;
-  padding: 5px 10px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  cursor: default;
-  font-size: 12px;
+footer {
+  flex: none;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #999;
+  font-size: 10px;
+
+  background: #121922;
+  box-shadow: 0 5px 6px 0px #0000002e inset;
+  border-top: 1px solid #780000;
+  width: 200vw;
+  margin-left: -50vw;
 }
 
-.version:hover {
-  color: #fff;
+footer img {
+  height: 25px;
+  margin: 10px;
+  transition: 0.125s ease-out transform;
+}
+
+footer img:hover {
+  transform: translateY(-2px);
+}
+
+footer div {
+  width: 200px;
+  margin: auto;
+}
+
+footer a {
+  text-decoration: underline;
+  color: #ccc;
 }

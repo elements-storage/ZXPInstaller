@@ -1,0 +1,111 @@
+name: Package-Build
+on: [push, pull_request]
+jobs:
+  Lint:
+    runs-on: macos-11.0
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.3.4
+      with:
+        fetch-depth: 0
+
+    - name: Installing Node
+      uses: actions/setup-node@v2.4.0
+      with:
+        node-version: 14
+
+    - name: Install deps
+      run: |
+        npm i -g yarn@1.19.1
+        yarn
+
+    - name: Lint
+      run: yarn lint
+
+  macOS-Build:
+    runs-on: macos-11.0
+    needs: Lint
+    strategy:
+      matrix:
+        include:
+          - arch: x64
+          # - arch: arm64
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.3.4
+      with:
+        fetch-depth: 0
+
+    - name: Installing Node
+      uses: actions/setup-node@v2.4.0
+      with:
+        node-version: 14
+
+    - name: Install deps
+      run: |
+        sudo npm i -g yarn@1.22.1
+        yarn
+
+    - name: Build
+      run: yarn pack:mac-${{matrix.arch}}
+      env:
+        ARCH: ${{matrix.arch}}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        CSC_LINK: ${{ secrets.CSC_LINK }}
+        CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
+        APPSTORE_USERNAME: ${{ secrets.APPSTORE_USERNAME }}
+        APPSTORE_PASSWORD: ${{ secrets.APPSTORE_PASSWORD }}
+        USE_HARD_LINKS: false
+
+    - name: Package artifacts
+      run: |
+        mkdir artifact-dmg
+        mv dist/*.dmg artifact-dmg/
+
+    - uses: actions/upload-artifact@master
+      name: Upload DMG
+      with:
+        name: macOS .dmg (${{matrix.arch}})
+        path: artifact-dmg
+
+  Windows-Build:
+    runs-on: windows-2016
+    needs: Lint
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.3.4
+      with:
+        fetch-depth: 0
+
+    - name: Installing Node
+      uses: actions/setup-node@v2.4.0
+      with:
+        node-version: 14
+
+    - name: Build
+      shell: powershell
+      run: |
+        npm i -g yarn@1.19.1
+        yarn
+
+    - name: Build
+      run: yarn pack:win
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        WIN_CSC_LINK: ${{ secrets.WIN_CSC_LINK }}
+        WIN_CSC_KEY_PASSWORD: ${{ secrets.WIN_CSC_KEY_PASSWORD }}
+        # DEBUG: electron-builder,electron-builder:*
+
+    - name: Package artifacts
+      run: |
+        mkdir artifact-setup
+        mv dist/*.exe artifact-setup/
+
+    - uses: actions/upload-artifact@master
+      name: Upload installer
+      with:
+        name: Windows installer
+        path: artifact-setup

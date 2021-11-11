@@ -1,0 +1,20 @@
+asar: false
+
+dmg:
+  background: assets/mac/installer.png
+  icon: assets/mac/icon.icns
+  contents:
+    - { "x": 587, "y": 249, "type": "link", "path": "/Applications" }
+    - { "x": 208, "y": 249, "type": "file" }
+
+mac:
+  icon: assets/mac/icon.icns
+
+win:
+  icon: assets/windows/icon.ico
+
+nsis:
+  packElevateHelper: false
+
+afterSign: ./hooks/afterSignHook.cjs
+afterAllArtifactBuild: ./hooks/afterBuildHook.cjs

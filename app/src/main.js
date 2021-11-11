@@ -1,118 +1,107 @@
-global.$ = $;
+import { Installer } from './installer.js'
+import { UIMessages } from './messages.js'
+const { dialog, shell } = require('@electron/remote')
 
-global.View = function() {
-  var body = document.body;
-  var view = document.getElementById('main-view');
-  var installer = global.installer();
-  var remote = require('remote');
-  var dialog = remote.require('dialog');
+class View {
+  constructor (view) {
+    this.view = view
+    this.installer = new Installer()
+    this.zxpPath = null
 
-  var msg = new global.Messages();
+    for (const a of document.querySelectorAll('a[target=_blank]')) {
+      a.addEventListener('click', e => {
+        e.preventDefault()
+        shell.openExternal(a.href)
+      })
+    }
 
-  this.zxpPath;
+    document.addEventListener('dragover', e => {
+      this.resetClasses()
+      this.view.classList.toggle('is-dragging', true)
+      this.updateStatus(UIMessages.dropToInstall)
+      e.preventDefault()
+    })
 
-  _this = this;
+    document.addEventListener('dragleave', e => {
+      this.resetClasses()
+      this.updateStatus(UIMessages.dragToInstall)
+      e.preventDefault()
+    })
 
-  var resetClasses = function() {
-    $(body).removeClass(
-      'is-showing-spinner was-successful is-dragging has-error'
-    );
-  };
+    document.addEventListener('dragend', e => {
+      this.resetClasses()
+      this.updateStatus(UIMessages.dragToInstall)
+      e.preventDefault()
+    })
 
-  var updateStatus = function(message) {
-    $(body)
-      .find('.status')
-      .html(message);
-  };
+    document.addEventListener('drop', e => {
+      this.resetClasses()
+      e.preventDefault()
+      const file = e.dataTransfer.files[0]
+      console.log('detected:', file.path)
+      this.zxpPath = file.path
+      this.install()
+      e.stopPropagation()
+    })
 
-  var updateVersion = function(message) {
-    $(body)
-      .find('.version')
-      .html(message);
-  };
+    document.querySelector('.main-view').addEventListener('click', async () => {
+      const path = (await dialog.showOpenDialog({ properties: ['openFile'] })).filePaths[0]
+      if (!path) return false
+      console.log('detected:', path)
+      this.zxpPath = path
+      this.install()
+      return false
+    })
 
-  var toggleSpinner = function(state) {
-    resetClasses();
-    $(body).toggleClass('is-showing-spinner', state);
-  };
+    this.updateStatus(UIMessages.dragToInstall)
+  }
 
-  var toggleSuccess = function(state) {
-    resetClasses();
-    $(body).toggleClass('was-successful', state);
-  };
+  resetClasses () {
+    for (const cls of ['is-showing-spinner', 'was-successful', 'is-dragging', 'has-error']) {
+      this.view.classList.toggle(cls, false)
+    }
+  }
 
-  var install = function() {
-    var promise = installer.install(_this.zxpPath);
-    startInstalling();
-    promise.then(
-      function(result) {
-        installationSuccess();
-      },
-      function(err) {
-        installationFailed(err);
-        $(body).addClass('has-error');
-      }
-    );
-  };
+  updateStatus (message) {
+    document.querySelector('.status').innerText = message
+  }
 
-  var startInstalling = function() {
-    updateStatus(msg.ui['installing']);
-    toggleSpinner(true);
-  };
+  toggleSpinner (state) {
+    this.resetClasses()
+    this.view.classList.toggle('is-showing-spinner', state)
+  }
 
-  var installationFailed = function(err) {
-    toggleSpinner(false);
-    updateStatus(err);
-  };
+  toggleSuccess (state) {
+    this.resetClasses()
+    this.view.classList.toggle('was-successful', state)
+  }
 
-  var installationSuccess = function() {
-    toggleSpinner(false);
-    toggleSuccess(true);
-    updateStatus(msg.ui['installed']);
-  };
+  startInstalling () {
+    this.updateStatus(UIMessages.installing)
+    this.toggleSpinner(true)
+  }
 
-  // PUBLIC
+  installationFailed (err) {
+    this.toggleSpinner(false)
+    this.updateStatus(err)
+  }
 
-  this.init = function() {
-    updateVersion(remote.getGlobal('version'));
+  installationSuccess () {
+    this.toggleSpinner(false)
+    this.toggleSuccess(true)
+    this.updateStatus(UIMessages.installed)
+  }
 
-    document.ondragover = function() {
-      resetClasses();
-      $(body).addClass('is-dragging');
-      updateStatus(msg.ui['dropToInstall']);
-      return false;
-    };
+  async install () {
+    this.startInstalling()
+    try {
+      await this.installer.install(this.zxpPath)
+      this.installationSuccess()
+    } catch (err) {
+      this.installationFailed(err)
+      this.view.classList.toggle('has-error', true)
+    }
+  }
+}
 
-    document.ondragleave = document.ondragend = function() {
-      resetClasses();
-      updateStatus(msg.ui['dragToInstall']);
-      return false;
-    };
-
-    document.ondrop = function(e) {
-      resetClasses();
-      e.preventDefault();
-      var file = e.dataTransfer.files[0];
-      console.log('detected:', file.path);
-      _this.zxpPath = file.path;
-      install();
-      return false;
-    };
-
-    document.onclick = function(e) {
-      var path = dialog.showOpenDialog({ properties: ['openFile'] });
-      if (!path) return false;
-      console.log('detected:', path);
-      _this.zxpPath = path;
-      install();
-      return false;
-    };
-
-    updateStatus(msg.ui['dragToInstall']);
-  };
-};
-
-$(document).ready(function() {
-  var _view = new View();
-  _view.init();
-});
+window.view = new View(document.body)

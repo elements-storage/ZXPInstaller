@@ -1,46 +1,34 @@
-var app = require('app'); // Module to control application life.
-var BrowserWindow = require('browser-window'); // Module to create native browser window.
+import { app, BrowserWindow } from 'electron'
+import * as path from 'path'
+import * as remote from '@electron/remote/main'
 
-// Report crashes to our server.
-require('crash-reporter').start();
-
-// Keep a global reference of the window object, if you don't, the window will
-// be closed automatically when the javascript object is GCed.
-var mainWindow = null;
+remote.initialize()
 
 // Quit when all windows are closed.
-app.on('window-all-closed', function() {
-  // if (process.platform != 'darwin') {
-  app.quit();
-  // }
-});
+app.on('window-all-closed', () => app.quit())
 
 // This method will be called when Electron has done everything
 // initialization and ready for creating browser windows.
-app.on('ready', function() {
+app.whenReady().then(() => {
   // Create the browser window.
-  mainWindow = new BrowserWindow({
+  const mainWindow = new BrowserWindow({
     width: 600,
-    height: 450,
-    'min-width': 600,
-    'min-height': 450,
-    'max-width': 600,
-    'max-height': 450
-  });
+    height: 550,
+    resizable: false,
+    maximizable: false,
+    titleBarStyle: 'hiddenInset',
+    webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false,
+      sandbox: false,
+    },
+  })
 
   // and load the index.html of the app.
-  mainWindow.loadUrl('file://' + __dirname + '/index.html');
+  mainWindow.loadFile(path.resolve(__dirname, 'index.html'))
+
+  remote.enable(mainWindow.webContents)
 
   // Open the devtools.
   // mainWindow.openDevTools();
-
-  global.version = app.getVersion();
-
-  // Emitted when the window is closed.
-  mainWindow.on('closed', function() {
-    // Dereference the window object, usually you would store windows
-    // in an array if your app supports multi windows, this is the time
-    // when you should delete the corresponding element.
-    mainWindow = null;
-  });
-});
+})
