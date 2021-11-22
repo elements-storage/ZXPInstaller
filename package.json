@@ -20,7 +20,8 @@
     "pack": "npm run pack:mac-arm64 && npm run pack:win",
     "pack:mac-arm64": "node hooks/ci-env-wrapper.cjs ./node_modules/.bin/electron-builder --macos --arm64",
     "pack:mac-x64": "node hooks/ci-env-wrapper.cjs ./node_modules/.bin/electron-builder --macos --x64",
-    "pack:win": "node hooks/ci-env-wrapper.cjs ./node_modules/.bin/electron-builder.cmd --win --x64"
+    "pack:_win": "electron-builder --win --x64",
+    "pack:win": "node hooks/ci-env-wrapper.cjs npm _pack:win"
   },
   "repository": {
     "type": "git",
